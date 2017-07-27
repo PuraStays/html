@@ -1,0 +1,123 @@
+<hotelogix version="1.0" datetime="2012-01-16T11:10:15">
+<response>
+<hotels>
+<hotel id="ePABVvohiUIiYUb9IwFGPCW9Uf7D8UaKGJzM9dqgLqQ|"
+title="Test Hoteland welcome home H123(288)" currencycode="USD" minRate="345">
+<status code="1400" message="SUCCESS"/>
+<roomtypes>
+<roomtype
+id="2A5GMYc2tHr2TwfLrcQKuiI2e2OR6sRGb83sg8RBSrA|" title="Delux"
+availableroom="106" basepax="3" maxpax="4" minrooms="1" minRate="3750">
+<imgs>
+<img src="http://sougatalinux.local/productimages/roomtypes/roomtype19022011111859173691790.jpeg"/>
+</imgs>
+<amenities>
+<amenity title="second new amenity"/>
+<amenity title="welcomehome"/>
+<amenity title="hand shower"/>
+<amenity title="Spa"/>
+</amenities>
+<rates>
+<rate
+id="liZ2cS_uDa2O4QAzMPsZpY6W4tCAtprjf8zwa_EKYg4|" price="7495" title="Web Rsv
+Pkg12">
+<description><![CDATA[This is my web rate]]>
+</description>
+<inclusions>
+<inclusion
+id="TxDLKAScfxEywaZE8bRwpZb7jzW_V04PFJRW4UGWIXY|" title="Breakfast"/>
+<inclusion id="jeuyNGKPXqQKAd_ANtfbimFMHoU-Pk41R5PksMoMlA|"
+title="Breakfast for kids"/>
+</inclusions>
+<bookingpolicy chargetype="PV" charge="100"
+deposittype="CCD" depositamount="7495"/>
+</rate>
+<rate
+id="pvXToOnRsgTtKEM0Czc6EaSWF97CXMiQmtohyTX8nb4|" price="75050"
+title="ssssssssss">
+<description><![CDATA[Description]]>
+</description>
+<inclusions>
+<inclusion
+id="TxDLKAScfxEywaZE8bRwpZb7jzW_V04PFJRW4UGWIXY|" title="Breakfast"/>
+<inclusion id="jeuyNGKPXqQKAd_ANtfbimFMHoU-Pk41R5PksMoMlA|"
+title="Breakfast for kids"/>
+</inclusions>
+<bookingpolicy chargetype="" charge="0"
+deposittype="NA" depositamount="0"/>
+</rate>
+<rate
+id="n1ss4bqD_zvttHqfd5t3nscNJfxufJmlCQx2HH4h7Ag|" price="75000" title="Rack
+Rate">
+<description><![CDATA[]]>
+</description>
+<bookingpolicy chargetype="PV" charge="100"
+deposittype="CCD" depositamount="75000"/>
+</rate>
+<rate id="hMs3mjnUrC35UIMNrEQ0rXSuJ3cDMKaeJ0fiU90H0w|"
+price="3750" title="Seasonal Rate">
+<description><![CDATA[]]>
+</description>
+<bookingpolicy chargetype="" charge="0"
+deposittype="NA" depositamount="0"/>
+</rate>
+</rates>
+</roomtype>
+<roomtype id="VPhI1mMxwHuzERxnq0GLaL0nME9W8_D6rHt0mxg_AQ|"
+title="RRA12123" availableroom="15" basepax="2"
+maxpax="3" minrooms="1" minRate="345">
+<imgs>
+<img src="http://sougatalinux.local/productimages/roomtypes/roomtype23122011145455691164616.png"/>
+</imgs>
+<amenities>
+<amenity title="welcome"/>
+<amenity title="hi"/>
+</amenities>
+<rates>
+<rate id="V_OGXFf9sRcHq4Jw6hKasCoWHA1g-
+8cvdL3SkMLsbv8|" price="395" title="Web Rsv Pkg12">
+<description><![CDATA[This is my web rate
+This is sdflksdjf sdkfjsdlk f]]>
+</description>
+<inclusions>
+<inclusion
+id="TxDLKAScfxEywaZE8bRwpZb7jzW_V04PFJRW4UGWIXY|" title="Breakfast"/>
+<inclusion id="jeuyNGKPXqQKAd_ANtfbimFMHoU-Pk41R5PksMoMlA|"
+title="Breakfast for kids"/>
+</inclusions>
+<bookingpolicy chargetype="PV" charge="100"
+deposittype="CCD" depositamount="395"/>
+</rate>
+<rate id="T8eaqd5VxMwCGFCsYDUVNWPsp_CkuO4RaDX_WHNEuU|"
+price="395" title="ssssssssss">
+<description><![CDATA[Description]]>
+</description>
+<inclusions>
+<inclusion
+id="TxDLKAScfxEywaZE8bRwpZb7jzW_V04PFJRW4UGWIXY|" title="Breakfast"/>
+<inclusion id="jeuyNGKPXqQKAd_ANtfbimFMHoU-Pk41R5PksMoMlA|"
+title="Breakfast for kids"/>
+</inclusions>
+<bookingpolicy chargetype="" charge="0"
+deposittype="NA" depositamount="0"/>
+</rate>
+<rate id="V-3hIGoY5QBoe_jpn9WYL6ISdc85TZLeheYMADJIMM|"
+price="345" title="Web Rate">
+<description><![CDATA[]]>
+</description>
+<bookingpolicy chargetype="" charge="0"
+deposittype="NA" depositamount="0"/>
+</rate>
+</rates>
+</roomtype>
+</roomtypes>
+</hotel>
+</hotels>
+</response>
+<request method="search" key="zZtpYBGsflWI3Oc">
+<stay checkindate="2012-01-25" checkoutdate="2012-01-30"/>
+<pax adult="1" child="0" infant="0"/>
+<roomrequire value="1"/>
+<limit value="200" offset="0" hasResult="0"/>
+</request>
+</hotelogix>

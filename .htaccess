@@ -1,0 +1,80 @@
+ErrorDocument 404 /404.php
+Options +FollowSymlinks
+
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} ^52.76.24.92
+RewriteRule ^(.*)$ http://www.purastays.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteRule ^about-pura-stays?$ about-pura-stays.php [L,NC]
+RewriteRule ^travel-tips?$ travel-tips.php [L,NC]
+RewriteRule ^travel-tales?$ travel-tales.php [L,NC]
+RewriteRule ^help-faqs?$ help-faqs.php [L,NC]
+RewriteRule ^pura-stays-rollout?$ pura-stays-rollout.php [L,NC]
+RewriteRule ^sitemap?$ sitemap.php [L,NC]
+RewriteRule ^contact-us?$ contact-us.php [L,NC]
+RewriteRule ^post-your-story?$ your-story.php [L,NC]
+RewriteRule ^post-your-property?$ post-your-property.php [L,NC]
+RewriteRule ^guest-policy?$ guest-policy.php [L,NC]
+RewriteRule ^terms-conditions?$ terms-conditions.php [L,NC]
+RewriteRule ^pura-stays-insight?$ pura-stays-insight.php [L,NC]
+RewriteRule ^profile?$ profile.php [L,NC]
+
+RewriteRule ^around-nainital/deja-vu-pura-stays-naukuchiatal?$ resorts/resort.php?id=28 [L,NC]
+RewriteRule ^around-nainital/frozen-woods-pura-stays-near-mukteshwar?$ resorts/resort.php?id=21 [L,NC]
+RewriteRule ^around-nainital/one-partridge-hill-pura-stays-near-mukteshwar?$ resorts/resort.php?id=26 [L,NC]
+RewriteRule ^around-nainital/the-camphor-tree-pura-stays-naukuchiatal?$ resorts/resort.php?id=27 [L,NC]
+RewriteRule ^around-nainital/the-hammock-pura-stays-bhimtal?$ resorts/resort.php?id=24 [L,NC]
+RewriteRule ^around-nainital/clifton-pura-stays-nainital?$ resorts/resort.php?id=30 [L,NC]
+RewriteRule ^around-nainital/two-chimneys-pura-stays-near-nainital?$ resorts/resort.php?id=31 [L,NC]
+
+RewriteRule ^around-nainital?$ resorts-map.php?id=39 [L,NC]
+RewriteRule ^around-nainital?$ around-nainital/ [L,NC]
+
+
+RewriteRule ^angling?$ map.php?id=63 [L,NC]
+RewriteRule ^bonfire?$ map.php?id=64 [L,NC]
+RewriteRule ^celebration-dinner?$ map.php?id=65 [L,NC]
+RewriteRule ^nature-picnic?$ map.php?id=67 [L,NC]
+RewriteRule ^paragliding?$ map.php?id=68 [L,NC]
+RewriteRule ^quad-biking?$ map.php?id=69 [L,NC]
+RewriteRule ^rappelling?$ map.php?id=70 [L,NC]
+RewriteRule ^rock-climbing?$ map.php?id=71 [L,NC]
+RewriteRule ^village-experience?$ map.php?id=73 [L,NC]
+RewriteRule ^wilderness-walk?$ map.php?id=76 [L,NC]
+RewriteRule ^zipline?$ map.php?id=77 [L,NC]
+RewriteRule ^kayaking?$ map.php?id=78 [L,NC]
+RewriteRule ^golf?$ map.php?id=79 [L,NC]
+RewriteRule ^sailing?$ map.php?id=80 [L,NC]
+
+RewriteRule ^travel-tales/mesmerizing-stay@frozen-woods-pura-stays?$ stories/story-details.php?stroy=41 [L,NC]
+RewriteRule ^travel-tales/tranquil-resting-place@-frozen-woods?$ stories/story-details.php?stroy=42 [L,NC]
+RewriteRule ^travel-tales/memorable-weekend-getaway-near-delhi@frozen-woods-pura-stays?$ stories/story-details.php?stroy=43 [L,NC]
+RewriteRule ^travel-tales/unforgettable-stay@-frozen-woods?$ stories/story-details.php?stroy=44 [L,NC]
+RewriteRule ^travel-tales/a-serene-resting-place@-the-hammock?$ stories/story-details.php?stroy=45 [L,NC]
+RewriteRule ^travel-tales/impressive-resort@-the-hammock?$ stories/story-details.php?stroy=46 [L,NC]
+RewriteRule ^travel-tales/awesome-experience@-the-hammock?$ stories/story-details.php?stroy=47 [L,NC]
+RewriteRule ^travel-tales/amazing-place-to-stay@-the-hammock?$ stories/story-details.php?stroy=48 [L,NC]
+RewriteRule ^travel-tales/splendid-gateway@-deja-vu?$ stories/story-details.php?stroy=49 [L,NC]
+RewriteRule ^travel-tales/perfect-place-to-stay@-deja-vu?$ stories/story-details.php?stroy=50 [L,NC]
+RewriteRule ^travel-tales/beautiful-looking-homestay?$ stories/story-details.php?stroy=51 [L,NC]
+RewriteRule ^travel-tales/relaxed-and-enjoyable-stay@-deja-vu?$ stories/story-details.php?stroy=52 [L,NC]
+RewriteRule ^travel-tales/beautiful-holiday-by-the-lake-at-the-camphor-tree-pura-stays?$ stories/story-details.php?stroy=53 [L,NC]
+RewriteRule ^travel-tales/lovely-retreat-at-the-camphor-tree?$ stories/story-details.php?stroy=54 [L,NC]
+RewriteRule ^travel-tales/relaxing-stay-in-the-lap-of-nature?$ stories/story-details.php?stroy=55 [L,NC]
+RewriteRule ^travel-tales/enchanting-lakeside-holiday-at-the-camphor-tree?$ stories/story-details.php?stroy=56 [L,NC]
+RewriteRule ^travel-tales/perfect-weekend-trip-to-refresh?$ stories/story-details.php?stroy=57 [L,NC]
+RewriteRule ^travel-tales/nice,-quiet-holiday-in-the-himalayas?$ stories/story-details.php?stroy=58 [L,NC]
+RewriteRule ^travel-tales/heavenly-experience-at-one-partridge-hill?$ stories/story-details.php?stroy=59 [L,NC]
+RewriteRule ^travel-tales/peaceful-and-luxurious-holiday-at-one-partridge-hill?$ stories/story-details.php?stroy=60 [L,NC]
+RewriteRule ^travel-tales/modern-luxury-in-serenity-of-hills?$ stories/story-details.php?stroy=61 [L,NC]
+RewriteRule ^travel-tales/amazing-experience?$ stories/story-details.php?stroy=62 [L,NC]
+RewriteRule ^travel-tales/unforgettable-experience?$ stories/story-details.php?stroy=63 [L,NC]
+RewriteRule ^travel-tales/in-love-with-mountains-of-uttarakhand!?$ stories/story-details.php?stroy=64 [L,NC]
+RewriteRule ^travel-tales/memorable-experience?$ stories/story-details.php?stroy=65 [L,NC]
+RewriteRule ^travel-tales/celebration-dinner-at-the-hammock?$ stories/story-details.php?stroy=66 [L,NC]
+RewriteRule ^travel-tales/amazing-weekend-getaway$ stories/story-details.php?stroy=67 [L,NC]

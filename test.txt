@@ -1,0 +1,38 @@
+<?php
+function postdata($m,$requestStr)
+{
+$actionUrl = 'https://staygrid.com/ws/web/wsauth/' . $m;
+$signature = hash_hmac("sha1",$requestStr,($m=='wsauth'?"YOUR CONSUMER
+SECRET":"YOUR ACCESS SECRET"));
+$extHeader = array(
+"Content-Type: text/xml"
+,"X-HAPI-Signature: $signature"
+);
+$request = curl_init($actionUrl);
+curl_setopt($request,CURLOPT_HTTPHEADER,$extHeader);
+curl_setopt($request, CURLOPT_HEADER, 0);
+curl_setopt($request, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($request, CURLOPT_REFERER, 'http://www.hotelogix.com');
+curl_setopt($request, CURLOPT_POSTFIELDS, $requestStr);
+curl_setopt($request, CURLOPT_SSL_VERIFYPEER, FALSE);
+$post_response = curl_exec($request);
+curl_close ($request);
+}
+//GET ACCESS KEY/SECRET EXAMPLE //
+$xml = '<?xml version="1.0"?>
+<hotelogix version="1.0" datetime="2012-01-16T10:11:15">
+<request method="wsauth" key="YOUR CONSUMER KEY'"></request>
+</hotelogix>';
+postdata('wsauth',$xml);
+// FOR SEARCH AVAILIBILITY EXAMPLE//
+$xml = '<?xml version="1.0"?>
+<hotelogix version="1.0" datetime="2012-01-16T11:09:15">
+<request method="search" key="YOUR ACCESS KEY'">
+<stay checkindate="2012-01-25" checkoutdate="2012-01-30"/>
+<pax adult="1" child="0" infant="0"/>
+<roomrequire value="1"/>
+<limit value="200" offset="0" hasResult="0"/>
+</request>
+</hotelogix>';
+postdata('search',$xml);
+?>

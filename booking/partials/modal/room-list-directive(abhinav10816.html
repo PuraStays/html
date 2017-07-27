@@ -1,0 +1,68 @@
+<div class="img-blk col-sm-6">
+        <div class="inner">
+            <div class="fig">
+                <figure> 
+                    <img fallback-src="images/default.gif" ng-src="{{images[0]._src}}" alt="{{room._title}}">
+                </figure>
+            </div>
+            <div class="des">
+                <h3>{{room._title}}</h3>
+                <p ng-bind-html="room.description"></p>
+                
+                <a href="javascript:void(0);" ng-model="showDetails" ng-click="changeAminityDisplay()">Amenities</a>
+            </div>
+        </div>    
+    </div>
+    <div class="col-sm-6">
+        <div class="rght-blk-inner">
+            <div class="room-cnt">
+                <div class="inner">
+                    <div>
+                        <table>
+                            <tr>
+                                <td align="left" style="padding:5px;">Rooms Available:</td><td width="30%" style="padding:5px;">{{room._availableroom}}</td>
+                            </tr>
+                        </table>
+                        <br/>
+                    </div>
+                   <div class="counter">
+                        <div class="counter-inner">
+                            <div class="button minus" ng-click="substractOne()">
+                                <span> - </span>
+                            </div>
+                            <input type="text" ng-model="roomcount" readonly>
+                            <div class="button plus" ng-click="addOne()">
+                                <span> + </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rem" ng-if="added" ng-click="removed()"><span>Remove<i>x</i></span></div>
+                    <p ng-if="invalidroom" style="color:#ff0000;">Please select the number of rooms required.</p>
+                    <p ng-if="errorRoomSelected" style="color:#ff0000;">Number of rooms you have opted for is {{selectedRoomCount}}.<br/>If you want to add more rooms,<br/>please change your search criteria.</p>
+                    <div class="clearfix"></div>  
+                </div>
+            </div>
+            <div class="room-book">
+                <div class="inner">
+                    <div class="txt"> 
+                        <strong><i class="fa fa-inr" aria-hidden="true"></i> {{unitPrice}}<span>per night</span></strong>                       
+                        <small>Tax: <i class="fa fa-inr" aria-hidden="true"></i> {{unitTax}}</small>
+                        
+                        <!-- <strong>{{rates[0]._price}}</strong> -->
+                        
+                        <a href="javascript:void(0);" class="btn btn-pura active" ng-if="!added" ng-click='handleAddBtn(room._maxpax)'>Add</a>
+                        <p ng-if="!room._availableroom>0" style="color:#ff0000;">Not Available</p>
+                        <div class="clearfix"></div>    
+
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="clearfix"></div>
+    <div class="aminities" ng-if="showDetails">
+        <ul>
+            <li ng-repeat="amin in aminities">{{amin._title}}</li>
+        </ul>
+    </div>
+</li>

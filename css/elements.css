@@ -1,0 +1,65 @@
+#abc{width:100%;height:100%;top:10px;left:0;display:none;position:fixed;background-color:rgba(49, 49, 49, 0.65);overflow:auto;z-index:9999;}
+img#close{position:absolute;right:9px;top:9px;cursor:pointer;width:20px;}
+div#popupContact{position:absolute;left:15%;top:4%;font-family:RalewayLight;width:850px;}
+#abc form{max-width:100%;min-width:250px;padding:10px 50px;border:2px solid gray;border-radius:10px;font-family:RalewayLight;background-color:#fff}
+div#popupContact p{margin-top:15px}
+#abc h2{background-color:#E5394F;padding:30px 30px;margin:-10px -50px;text-align:center;border-radius:10px 10px 0 0;color:white;text-transform:uppercase;line-height:39px;font-size:32px;font-family:RalewayLight;font-weight:normal;}
+div#popupContact hr{margin:10px -50px;border:0;border-top:1px solid #ccc}
+div#popupContact input[type=text]{width:100%;padding:10px;margin-top:15px;padding-left:10px;font-size:16px;font-family:RalewayLight;border:0px;border-bottom:1px dashed black;outline:none;}
+div#popupContact input[type=date]{width:100%;padding:10px;margin-top:15px;padding-left:10px;font-size:16px;font-family:RalewayLight;border:0px;border-bottom:1px dashed black;outline:none;}
+div#popupContact #submit{text-decoration:none;width:100%;text-align:center;display:block;background-color:#FFBC00;color:black;border:1px solid #FFCB00;padding:10px 0;font-size:20px;cursor:pointer;border-radius:5px;font-family:RalewayLight;}
+.abcbut{width:14%;height:45px;border-radius:5%;background-color:#E5394F;color:#fff;font-family:RalewayLight;font-size:18px;cursor:pointer;position:fixed;right:30px;bottom:0px;z-index:999;border:0px;outline:none;}
+.partition{width:30%;float:left;margin:1%;position:relative;}
+.partition1{width:48%;float:left;margin:1%;position:relative;}
+.partition img{width:100%;}
+.imgcover{position:absolute;bottom:0px;color:white;font-weight:bold;font-size:20px;text-align:center;width:100%;padding:0% 0%;height:100%;background:rgba(0,0,0,0.5);}
+.imgtitle{padding:20% 0%;font-size:13px;font-weight:normal;font-family:RalewayLight;}
+.imgcover input{float:left !important;width:20px;height:30px;}
+div#popupContact h3{text-align:center;}
+div#popupContact h4{font-weight:normal;text-align:center;font-family:RalewayLight;line-height:25px;}
+div#popupContact h5{font-weight:normal;text-align:center;font-family:RalewayLight;line-height:15px;}
+.clear{clear:both;}
+@media (min-width:320px) and (max-width:479px){div#popupContact{position:absolute;left:0%;top:4%;font-family:RalewayLight;width:100%;}
+div#popupContact form{max-width:100%;min-width:0px;padding:10px 50px;border:2px solid gray;border-radius:10px;font-family:raleway;background-color:#fff;}
+#abc h2{background-color:#E5394F;padding:30px 30px;margin:-10px -50px;text-align:center;border-radius:10px 10px 0 0;color:white;text-transform:uppercase;line-height:30px;font-size:25px;font-family:RalewayLight;font-weight:normal;}
+.partition{width:100%;float:left;margin:1%;position:relative;}
+.abcbut{width:29%;}
+.partition1{width:100%;float:left;margin:1%;position:relative;}
+}
+@media (min-width:480px) and (max-width:767px){div#popupContact{position:absolute;left:0%;top:4%;font-family:RalewayLight;width:100%;}
+div#popupContact form{max-width:100%;min-width:0px;padding:10px 50px;border:2px solid gray;border-radius:10px;font-family:raleway;background-color:#fff;}
+#abc h2{background-color:#E5394F;padding:30px 30px;margin:-10px -50px;text-align:center;border-radius:10px 10px 0 0;color:white;text-transform:uppercase;line-height:30px;font-size:25px;font-family:RalewayLight;font-weight:normal;}
+.partition{width:100%;float:left;margin:1%;position:relative;}
+.abcbut{width:29%;}
+.partition1{width:100%;float:left;margin:1%;position:relative;}
+}
+@media (min-width:768px) and (max-width:1023px){#enquire{position:relative;z-index:99;top:5%;right:8%;background:rgba(255, 255, 255, 0.5);width:50%;}
+div#popupContact{position:absolute;left:0%;top:4%;font-family:RalewayLight;width:100%;}
+div#popupContact form{max-width:100%;min-width:0px;padding:10px 50px;border:2px solid gray;border-radius:10px;font-family:raleway;background-color:#fff;}
+#abc h2{background-color:#E5394F;padding:30px 30px;margin:-10px -50px;text-align:center;border-radius:10px 10px 0 0;color:white;text-transform:uppercase;line-height:30px;font-size:25px;font-family:RalewayLight;font-weight:normal;}
+.partition{width:31%;float:left;margin:1%;position:relative;}
+.abcbut{width:29%;}
+.partition1{width:48%;float:left;margin:1%;position:relative;}
+#enquire{position:relative;z-index:99;top:5%;right:0% !important;background:rgba(255, 255, 255, 0.5);width:50%;}
+#enquire #popupContact{position:relative;right:0%;top:0;font-family:RalewayLight;background:rgba(255, 255, 255, 0.7);width:100% !important;}
+}
+@media (min-width:1023px) and (max-width:1279px){div#popupContact{position:absolute;left:8%;top:4%;font-family:RalewayLight;width:850px;}
+}
+.pack{height:auto;}
+.package-pura-banner-inner{height:75px !important;overflow:hidden;width:100%;background:#2D3B3F !important;}
+.sec-resort1{background:#e1dfcd;height:auto !important;margin-bottom:300px;position:relative;}
+.tab-container1{text-align:center;position:relative;top:0px !important;}
+.tab-container1 img{width:100%;height:100%;}
+.navbar-pura1{background-color:#2D3B3F;border:none;top:0px;transition:0.5s all;}
+#enquire{position:relative;z-index:99;top:5%;right:8%;background:rgba(255, 255, 255, 0.5);width:50%;}
+#enquire #popupContact{position:relative;right:2%;top:0;font-family:RalewayLight;width:850px;background:rgba(255, 255, 255, 0.7);width:90%;}
+.package-pura-banner-inner::before{width:100%;height:150px;content:"";position:absolute;top:0;z-index:100;background:transparent;}
+#enquire #popupContact #submit{text-decoration:none;width:100%;text-align:center;display:block;background-color:#EBA62D;color:white;border:1px solid #EBA62D;padding:10px 0;font-size:20px;cursor:pointer;border-radius:5px;font-family:RalewayLight;font-weight:bold;transition:0.5s all ease-out;}
+#enquire #popupContact #submit:hover{background:rgba(255,255,255,0.5);color:#EBA62D;border:1px solid #EBA62A;}
+#enquire #popupContact #submit1{text-decoration:none;width:100%;text-align:center;display:block;background-color:#2D3A40;color:white;border:1px solid #2D3A40;padding:10px 0;font-size:20px;cursor:pointer;border-radius:5px;font-family:RalewayLight;font-weight:bold;transition:0.5s all ease-out;}
+#enquire #popupContact #submit1:hover{background:rgba(255, 255, 255, 0.5);color:#2D3A40;border:1px solid #2D3A40;transition:0.5s all ease-in;}
+#enquire #popupContact #submit2{text-decoration:none;width:100%;text-align:center;display:block;background-color:#E5394F;color:white;border:1px solid #E5394F;padding:10px 0;font-size:20px;cursor:pointer;border-radius:5px;font-family:RalewayLight;font-weight:bold;transition:0.5s all ease-out;}
+#enquire #popupContact #submit2:hover{background:rgba(255, 255, 255, 0.45);border:1px solid #E5394F;color:#E5394F;transition:0.5s all ease-in;}
+.sec-resort1 .container{width:95%;}
+.col-md-4 div#enquire{width:100%;}
+#enquire .partition1{width:98%;}

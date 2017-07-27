@@ -1,0 +1,58 @@
+<div class="section summary">
+    <div class="sec-inner">
+        <div class="question-sec">
+            <h2 class="text-left">Summary</h2>
+            <div class="row">
+                <h5>Rooms</h5>
+                <ul class="selected">
+                    <li ng-repeat="room in rooms">
+                        <div class="selected-box">
+                            <div class="selected-box-inn">
+                                <div class="one"><span>{{room._title}}</span></div>
+                                <div class="two"><i class="fa fa-bed" aria-hidden="true" style="color:#A0A0A0"></i> {{room.room_count}}</div>
+                                <div class="three2"><i class="fa fa-inr" aria-hidden="true" style="color:#A0A0A0"></i> {{room.totalPrice}}</div>
+                            </div>
+                        </div>
+                    </li>                
+                </ul>
+            </div>
+            <div ng-if="programs" class="summaysep"></div>
+            <div class="row">
+                <h5>Programs</h5>
+                <ul class="selected">                   
+                    <li ng-repeat="prog in programs">
+                        <div class="selected-box">
+                            <div class="selected-box-inn">
+                                <div class="one">{{prog.title}}</div>
+                                <div class="two"><i class="fa fa-users" aria-hidden="true" style="color:#A0A0A0"> </i>{{prog.forPerson}}</div>
+                                <div class="three2"><i class="fa fa-inr" aria-hidden="true" style="color:#A0A0A0"></i> {{prog.totalPrice}}</div>
+                            </div>
+                        </div>
+                    </li>                 
+                </ul>
+            </div>
+            <div ng-if="finalPrice" class="summaysep"></div>
+            <div class="row">
+                <ul class="selected">                   
+                    <li>
+                        <div class="selected-box">
+                            <div class="selected-box-inn">
+                                <div class="one"></div>
+                                <div class="two"><strong>Total: </strong></div>
+                                <div class="three2"><i class="fa fa-inr" aria-hidden="true" style="color:#A0A0A0"></i> {{finalPrice}}</div>
+                            </div>
+                        </div>
+                    </li>                 
+                </ul>            
+            </div>
+            <div class="row top-gap">
+            	<a href="javascript:void(0);" class="btn btn-pura active btn-lg" ng-click="sendData()">Pay Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="btn-sec">
+    	<a href="javascript:void(0);" ng-click="back()" class="btn btn-success btn-pura left"><i class="fa fa-backward" aria-hidden="true"></i> back</a>    	
+    	<div class="clearfix"></div>
+    </div>
+    
+</div>

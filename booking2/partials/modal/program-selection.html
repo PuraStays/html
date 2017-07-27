@@ -1,0 +1,27 @@
+<div class="modal-header">
+    <h3 class="modal-title">List of Programs you can choose</h3>
+    <a href="javascript:void(0)" class="close" ng-click="cancel()">X</a>
+</div>
+<div class="modal-body">
+    <div class="subhead">
+        <h5>Choose programs</h5>        
+    </div>
+
+    <uib-tabset active="activeForm">
+        <uib-tab class="tabcontent-bordered" data-ng-repeat="package in packagesData.packages">
+          <uib-tab-heading>{{package.title}}</uib-tab-heading>
+          
+            <div class="resort-programs">
+                <ul>
+                    <li>
+                       <activity-program prgm="package" personcount="{{totalPerson}}" addprogram="programAdded(pr)" removeprogram="programRemoved()"></activity-program>
+                    </li>
+                </ul>
+            </div>
+        </uib-tab>
+    </uib-tabset>
+
+</div>
+<div class="modal-footer">
+    <button class="btn btn-pura" type="button" ng-click="ok()">OK</button>
+</div>

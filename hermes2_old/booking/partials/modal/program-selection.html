@@ -1,0 +1,86 @@
+<div class="modal-header">
+    <h3 class="modal-title">List of Programs you can choose</h3>
+    <a href="javascript:void(0)" class="close" ng-click="cancel()">X</a>
+</div>
+<div class="modal-body">
+    <div class="subhead">
+        <h5>Choose programs in <span ng-bind="hostelslist.hotel._title"></span>></h5>
+    </div>
+    {{hotelslist}}
+    <div class="resort-programs">
+        <ul>
+            <li>
+                <h4>HEALING / DETOX / WELLBEING <span>details <i class="fa fa-sort-desc" aria-hidden="true"></i></span></h4>
+                <div class="prog-blk">
+                    <div class="left-blk">
+                        <div class="inner">
+                            <ul>
+                                <li>
+                                    <div class="li-box">
+                                        <div class="one"><input type="checkbox" id="one"> <label for="one">Ayurveda massage</label></div>
+                                        <div class="two">Health (2-3 hrs)</div>      
+                                    </div>
+                                    <div class="detail-box"></div>
+                                </li>
+                            </ul>
+                            <div class="separator"><span>+</span></div>
+                            <ul>
+                                <li>
+                                    <div class="li-box">
+                                        <div class="one"><input type="checkbox" id="one"> <label for="one">Ayurveda massage</label></div>
+                                        <div class="two">Health (2-3 hrs)</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-box">
+                                        <div class="one"><input type="checkbox" id="one"> <label for="one">Ayurveda massage</label></div>
+                                        <div class="two">Health (2-3 hrs)</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-box">
+                                        <div class="one"><input type="checkbox" id="one"> <label for="one">Ayurveda massage</label></div>
+                                        <div class="two">Health (2-3 hrs)</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-box">
+                                        <div class="one"><input type="checkbox" id="one"> <label for="one">Ayurveda massage</label></div>
+                                        <div class="two">Health (2-3 hrs)</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-box">
+                                        <div class="one"><input type="checkbox" id="one"> <label for="one">Ayurveda massage</label></div>
+                                        <div class="two">Health (2-3 hrs)</div> 
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>    
+                    </div>
+                    <div class="right-blk">
+                        <div class="rght-blk-inner">
+                            <h3>Pricing</h3>                       
+                            <div class="rt-bx">
+                               <p><strong>805</strong>single occupancy</p>
+                               <p><strong>805</strong>single occupancy</p>
+                               <p><strong>805</strong>single occupancy</p>
+                            </div>
+                            <div class="price"><i>Total - </i><span>&#8377;</span> 23456</div>
+                            <a href="javascript:void(0);" class="btn gap btn-pura pull-right active">Add</a>
+                            <div class="clearfix"></div>
+                        </div>  
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>    
+            </li>
+
+            
+        </ul>            
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+    <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+</div>

@@ -1,0 +1,51 @@
+<div class="section" ng-controller="SideBarCtrl">
+	<div class="sec-inner">
+        <h3>Summary</h3>
+        <div class="side-wh" ng-if="whereData['name'] != undefined">                                
+            <label>where <i class="pull-right fa fa-pencil"  ng-click="goToWhere()"></i></label>
+            <div class="wh-full">   
+                <span>{{whereData.name}}</span>
+            </div>
+        </div>
+        <div class="side-wh" ng-if="whenData.diff>0"> 
+            <label>when<i class="pull-right fa fa-pencil" ng-click="goToWhen()"></i></label>
+            <div class="wh-half pull-left">
+                <i>from</i>
+                <span>{{whenData.start}}</span>
+            </div>
+            <div class="wh-half pull-right">
+                <i>to</i>
+                <span>{{whenData.end}}</span>
+            </div>
+            <div class="clearfix"></div>
+        </div>  
+        <div class="side-wh" ng-if="personData.adult.number>0 && personData.child.number>=0"> 
+            <label>Person<i class="pull-right fa fa-pencil" ng-click="goToPerson()"></i></label>
+            <div class="wh-half pull-left">
+                <i>adult</i>
+                <span>{{personData.adult.number}}</span>
+            </div>
+            <div class="wh-half pull-right">
+                <i>children</i>
+                <span>{{personData.child.number}}</span>
+            </div>
+            <div class="clearfix"></div>
+        </div> 
+        <div class="side-wh" ng-if="false"> 
+            <label>Your complete package<i class="pull-right fa fa-pencil" ng-click="goToPackage()"></i></label>
+            <div class="wh-full border-box">
+                <div class="border-box-inn">
+                    <p>1 Executive room<strong>3200</strong></p>
+                    <p>1 Executive room<strong>3200</strong></p>
+                    <p>1 Executive room<strong>3200</strong></p>
+                    <p>1 Executive room<strong>3200</strong></p>
+                </div>   
+                <p>1 Executive room<strong>3200</strong></p> 
+            </div>
+            <div class="clearfix"></div>
+        </div> 
+        <div class="side-wh" ng-if="false">
+            <a href="javascript:void(0);" class="btn btn-pura btn-block active">Pay now</a>
+        </div>   
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<section class="ranjan" ng-repeat="grp in grpdata">                                  
+    <h5 ng-hide="grp.activities.length==1">Choose any {{grp.max_selection}}</h5>
+    <ul>
+        <li ng-repeat="act in grp.activities">   
+
+            <div class="li-box">                                                    
+                <div class="one"><img ng-src="{{act.img}}"></div>
+                <div class="two">
+                    <label for="one">{{act.Activity_Name}} <span></span></label>
+                    <p ng-bind-html="act.description"></p>
+                </div> 
+                <div class="chkbx" ng-hide="grp.activities.length==1">
+                    <input type="checkbox" ng-model="selected[act.seqId]" ng-disabled="!selected[act.seqId] && maxSelected({{grp.max_selection}})" id="{{act.seqId}}"/>
+                </div>    
+            </div>
+        </li>                                        
+    </ul>                                                      
+    <div ng-hide="$index+1 == group.length" class="separator separator2"><span>or</span></div>  
+</section>

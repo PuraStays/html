@@ -1,0 +1,12 @@
+{
+	"cluster":[
+		{
+			"id": "001",
+			"name": "Jim Corbett"
+		},
+		{
+			"id": "002",
+			"name": "Alternate Nainital"
+		}
+	]
+}

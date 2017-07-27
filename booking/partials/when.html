@@ -1,0 +1,71 @@
+<div class="section when">
+    <div class="sec-inner">
+        <div class="question-sec">
+            <h2>Duration</h2>
+            <div class="box"> 
+                <div class="row whenGap">
+                  <div class="col-md-12">
+                    <div class="date-pick">
+                      <div class="date-pick-inner">
+                        <input id="start" type="text" class="form-control" ng-model="when.start" readonly>   
+                      </div>  
+                      <div class="date-pick-inner">
+                        <input id="end" type="text" class="form-control" ng-model="when.end" readonly>   
+                      </div> 
+                    </div>
+                  </div>
+                </div>                 
+                <div class="row">
+                  <p ng-if="when.diff > 0" ng-show="when.diff" class="top-gap text-center">{{when.diff}} day</p>
+                  <p ng-if="when.diff <= 0" class="top-gap text-center">Please change end date</p>
+                </div> 
+                                
+            </div>    
+        </div>
+    </div>
+
+
+    <div class="btn-sec">
+      <a href="javascript:void(0);" ng-click="back()" class="btn btn-success btn-pura left"><i class="fa fa-backward" aria-hidden="true"></i> Back</a>
+      <a href="javascript:void(0);" ng-click="next()" class="btn btn-success btn-pura right" ng-class="{'active': activebtn}">Next <i class="fa fa-forward" aria-hidden="true"></i></a>
+      <div class="clearfix"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function(){  
+    /*$( "#start" ).datepicker({
+        minDate: 0,
+        onClose: function(selected) {
+          $("#end").datepicker("option","minDate", selected)
+        }
+    });
+    $( "#end" ).datepicker({ 
+        minDate: 1
+    }); */
+
+    $("#start").datepicker({
+      minDate: 0,
+      onClose: function () {
+        var date2 = $('#start').datepicker('getDate');
+        date2.setDate(date2.getDate() + 1);
+        $('#end').datepicker('setDate', date2);
+        //sets minDate to dt1 date + 1
+        $('#end').datepicker('option', 'minDate', date2);
+        $('#end, #start').trigger('input');        
+      }
+    });
+    $('#end').datepicker({
+      minDate: 1,
+      onClose: function () {
+        var dt1 = $('#start').datepicker('getDate');
+        var dt2 = $('#end').datepicker('getDate');
+        if (dt2 <= dt1) {
+          var minDate = $('#end').datepicker('option', 'minDate');
+          //$('#end').datepicker('setDate', minDate);
+        }
+         $('#end, #start').trigger('input');
+      }
+    });
+  })
+</script>

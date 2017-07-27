@@ -1,0 +1,236 @@
+<div class="login-book" ng-if="showLogin">
+    <div class="modal-header">
+        <h3 class="modal-title">Sign In</h3>
+        <a href="javascript:void(0)" class="close" ng-click="cancel()">X</a>
+    </div>
+    <div class="modal-body">
+        <div class="subhead">
+            <h5>Please sign in to your account</h5>    
+        </div> 
+        <div class="alert alert-danger" ng-if="loginerror">{{loginerror}}</div>   
+        <form class="login-booking" name="loginform"> 
+            <div class="row">
+                <div class="col-sm-6">
+                    <fieldset class="form-group">
+                        <label>Email Id</label>
+                        <input type="email" ng-model="user.email" name="email" placeholder="Email Id" class="form-control" required="required" aria-required="true">
+                        <div class="error" ng-show="loginform.email.$error.required && loginform.email.$dirty">Required field</div>
+                    </fieldset>
+                </div>
+                <div class="col-sm-6">
+                    <fieldset class="form-group">
+                        <label>Password</label>
+                        <input type="password" ng-model="user.password" name="password" placeholder="Password" class="form-control" required="required" aria-required="true">
+                        <div class="error" ng-show="loginform.password.$error.required && loginform.password.$dirty">Required field</div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <button class="btn btn-pura active pull-right" ng-disabled="loginform.$invalid" type="button" ng-click="login()">Sign in</button>
+                </div>
+            </div>
+        </form> 
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="or-blk">
+                    <span><i>or</i></span>
+                </div>
+            </div>
+        </div>
+        <div class="row socialbtn">
+            <div class="col-sm-6">
+                <a class="btn btn-social btn-block btn-facebook" href="javascript:void(0);" ng-click="fblogin()"><span class="fa fa-facebook"></span> Sign in with Facebook</a>
+            </div>
+            <div class="col-sm-6">
+                <a class="btn btn-social btn-block btn-google" href="" ng-click="glogin();"><span class="fa fa-google"></span> Sign in with Google</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="or-blk">
+                    <span><i>or</i></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">   
+            <div class="col-sm-12">    
+                <div class="gst" ng-click="goToGuest()"><span class="fa fa-user"></span>Book as guest user</div>
+            </div>                      
+        </div>
+       
+
+    </div>
+
+    <div class="modal-footer auth">    
+        <p>No account yet? <a href="javascript:void(0);" ng-click="goToSignup()">Sign up</a></p>  
+    </div>
+</div>  
+
+<div class="signup-book" ng-if="showSignup">
+    <div class="modal-header">
+        <h3 class="modal-title">Sign up</h3>
+        <a href="javascript:void(0)" class="close" ng-click="cancel()">X</a>
+    </div>
+    <div class="modal-body">
+        <div class="subhead">
+            <h5>Please sign up Pura Stays to create a new account</h5>    
+        </div>   
+        <form class="login-booking" name="signupform"> 
+            <div class="row">
+                <div class="col-sm-6">
+                    <fieldset class="form-group">
+                        <label>Name</label>
+                        <input type="text" ng-model="reg.name" name="Name" placeholder="Name" class="form-control" value="" required="required" aria-required="true">
+                        <div class="error" ng-show="signupform.Name.$error.required && signupform.Name.$dirty">Required field</div>
+                    </fieldset>
+                </div>
+                <div class="col-sm-6">
+                    <fieldset class="form-group">
+                        <label>Phone</label>
+                        <input type="number" ng-model="reg.mobile" name="Mobile" placeholder="Phone" class="form-control" value="" required="required" aria-required="true">
+                        <div class="error" ng-show="signupform.Mobile.$error.required && signupform.Mobile.$dirty">Required field</div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <fieldset class="form-group">
+                        <label>Email Id</label>
+                        <input type="email" ng-model="reg.email" name="email" placeholder="Email Id" class="form-control valid" value="" required="required" aria-required="true" aria-invalid="false">
+                        <div class="error" ng-show="signupform.email.$error.required && signupform.email.$dirty">Required field</div>
+                    </fieldset>
+                </div>
+                <div class="col-sm-6">
+                    <fieldset class="form-group">
+                        <label>Password</label>
+                        <input type="password" ng-model="reg.password" name="password" placeholder="Password" class="form-control valid" value="" required="required" aria-required="true" aria-invalid="false">
+                        <div class="error" ng-show="signupform.password.$error.required && signupform.password.$dirty">Required field</div>
+                    </fieldset>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-12">
+                	<div class="pull-left terms-txt">By signing up you agree to our <a href="../terms-conditions.php">Terms & Conditions</a></div>
+                    <button class="btn btn-pura active pull-right" ng-disabled="signupform.$invalid" ng-click="signupNormal()" type="button">Sign up</button>
+                </div>
+            </div>
+        </form> 
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="or-blk">
+                    <span><i>or</i></span>
+                </div>
+            </div>
+        </div>
+        <div class="row socialbtn">
+            <div class="col-sm-6">
+                <a class="btn btn-social btn-block btn-facebook" href="javascript:void(0);" ng-click="fblogin()"><span class="fa fa-facebook"></span> Sign in with Facebook</a>
+            </div>
+            <div class="col-sm-6">
+                <a class="btn btn-social btn-block btn-google" href="" ng-click="glogin();"><span class="fa fa-google"></span> Sign in with Google</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="or-blk">
+                    <span><i>or</i></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">   
+            <div class="col-sm-12">    
+                <div class="gst" ng-click="goToGuest()"><span class="fa fa-user"></span>Book as guest user</div>
+            </div>                      
+        </div>
+    </div>
+
+    <div class="modal-footer auth">    
+        <p>Already registered? <a href="javascript:void(0);" ng-click="goToLogin()">Sign in</a></p>  
+    </div>
+</div>  
+
+<div class="login-book" ng-if="showGuest">
+    <div class="modal-header">
+        <h3 class="modal-title">Guest Checkout</h3>
+        <a href="javascript:void(0)" class="close" ng-click="cancel()">X</a>
+    </div>
+    <div class="modal-body">
+        <div class="subhead">
+            <h5>Fill the details for guest checkout</h5>    
+        </div>   
+        <form class="login-booking" name="guestform"> 
+            <div class="row">
+                <div class="col-sm-6">
+                    <fieldset class="form-group">
+                        <label>Name</label>
+                        <input type="text" ng-model="guest.name" name="name" placeholder="Name" class="form-control" value="" required="required" aria-required="true">
+                        <div class="error" ng-show="guestform.name.$error.required && guestform.name.$dirty">Required field</div>
+                    </fieldset>
+                </div>
+                <div class="col-sm-6">
+                    <fieldset class="form-group">
+                        <label>Phone</label>
+                        <input type="number" ng-model="guest.mobile" name="Mobile" placeholder="Phone" class="form-control" value="" required="required" aria-required="true">
+                        <div class="error" ng-show="guestform.Mobile.$error.required && guestform.Mobile.$dirty">Required field</div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <fieldset class="form-group">
+                        <label>Email Id</label>
+                        <input type="email" ng-model="guest.email" name="email" placeholder="Email Id" class="form-control valid" value="" required="required" aria-required="true" aria-invalid="false">
+                        <div class="error" ng-show="guestform.email.$error.required && guestform.email.$dirty">Required field</div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <button class="btn btn-pura active pull-right" ng-disabled="guestform.$invalid" type="button" ng-click="signupGuest()">Book now</button>
+                </div>
+            </div>
+        </form> 
+    </div>
+
+    <div class="modal-footer auth">    
+        <p><a href="javascript:void(0);" ng-click="goToSignup()">Sign up</a> | <a href="javascript:void(0);" ng-click="goToLogin()">Sign in</a></p>  
+    </div>
+</div> 
+
+<div class="other-details" ng-if="showOther">
+    <div class="modal-header">
+        <h3 class="modal-title">Last Step</h3>
+        <a href="javascript:void(0)" class="close" ng-click="cancel()">X</a>
+    </div>
+    <div class="modal-body">
+        <div class="subhead">
+            <h5>Please fill the details below</h5>    
+        </div>   
+        <form class="login-booking" name="otherform"> 
+            <div class="row">
+                <div class="col-sm-6" ng-if="showMobile">
+                    <fieldset class="form-group">
+                        <label>Mobile</label>
+                        <input type="number" ng-model="other.mobile" name="mobile" placeholder="Mobile" class="form-control" value="" required="required" aria-required="true">
+                        <div class="error" ng-show="otherform.mobile.$error.required && otherform.mobile.$dirty">Required field</div>
+                    </fieldset>
+                </div>
+                <div class="col-sm-6" ng-if="showEmail">
+                    <fieldset class="form-group">
+                        <label>Email Id</label>
+                        <input type="email" ng-model="other.email" name="email" placeholder="Email Id" class="form-control" value="" required="required" aria-required="true">
+                        <div class="error" ng-show="otherform.email.$error.required && otherform.email.$dirty">Required field</div>
+                    </fieldset>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-12">
+                    <button class="btn btn-pura active pull-right" ng-disabled="otherform.$invalid" type="button" ng-click="updateDetails()">Book Now</button>
+                </div>
+            </div>
+        </form> 
+    </div>
+</div>  

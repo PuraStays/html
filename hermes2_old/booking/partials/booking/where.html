@@ -1,0 +1,25 @@
+<div class="section where">
+    <div class="sec-inner">
+        <div class="question-sec">
+            <h2>Choose where do you want to go?</h2>            
+            <div class="box">
+            	<div class="row">
+            		<div class="col-sm-12">
+            			<ui-select ng-model="selected.value">
+						    <ui-select-match>
+						        <span ng-bind="$select.selected.name"></span>
+						    </ui-select-match>
+						    <ui-select-choices repeat="item in (itemArray | filter: $select.search) track by item.id">
+						        <span ng-bind="item.name"></span>
+						    </ui-select-choices>
+						  </ui-select>
+            		</div>
+            	</div>	  
+			</div>  
+        </div>        
+    </div>
+    <div class="btn-sec">    	
+    	<a href="javascript:void(0);" ng-click="next()" class="btn btn-success btn-pura active right">Next <i class="fa fa-forward" aria-hidden="true"></i></a>
+    	<div class="clearfix"></div>
+    </div>
+</div>

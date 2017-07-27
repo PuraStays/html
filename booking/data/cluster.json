@@ -1,0 +1,24 @@
+{
+	"cluster":[
+		{
+			"id": "001",
+			"name": "Jim Corbett",
+			"value": "Jim Corbett"
+		},
+		{
+			"id": "002",
+			"name": "Alternate Nainital",
+			"value": "Alternate Nainital"
+		},
+		{
+			"id": "003",
+			"name": "Alternate Nainital",
+			"value": "Alternate Nainital"
+		},
+		{
+			"id": "004",
+			"name": "Alternate Nainital",
+			"value": "Alternate Nainital"
+		}
+	]
+}

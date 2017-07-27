@@ -1,0 +1,136 @@
+@import url(../fonts/font.css);
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+html,body {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+input{
+	border:1px solid #b0b0b0;
+	padding:3px 5px 4px;
+	color:#979797;
+	width:190px;
+}
+address,caption,cite,code,dfn,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+/* General Demo Style */
+body{
+	font-family: 'ralewayregular';
+	background: #000;
+	font-weight: 400;
+	font-size: 15px;
+	color: #aa3e03;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.ie7 body{
+	overflow:hidden;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+.container{
+	position: relative;
+	text-align: center;
+}
+.clr{
+	clear: both;
+}
+.container > header{
+	padding: 30px 30px 10px 20px;
+	margin: 0px 20px 10px 20px;
+	position: relative;
+	display: block;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-align: left;
+}
+.container > header h1{
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	font-size: 35px;
+	line-height: 35px;
+	position: relative;
+	font-weight: 400;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    padding: 0px 0px 5px 0px;
+}
+.container > header h1 span{
+
+}
+.container > header h2, p.info{
+	font-size: 16px;
+	font-style: italic;
+	color: #f8f8f8;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+
+.bg{position:relative;}
+.coming{background:rgba(0,0,0,0.5); width:100%; position:absolute; z-index:100; bottom:100px;}
+.coming .coming-inn{padding:40px 0px 10px; width:600px; margin:auto; text-align:center; }
+.coming .coming-inn .logo{display:inline-block;}
+.coming .coming-inn .logo img{width:150px;}
+.coming .coming-inn .logo span{display:block; text-align:center; font-size:16px; color:#eaa62d; font-weight:bold;}
+.form-sec {margin-top:20px; padding:20px;}
+.form-sec .inn{width:100%; display:table;}
+.form-sec .inn input[type="submit"]{width:150px; display:table-cell; height:40px; box-sizing:border-box; cursor:pointer; background:#eaa62d; color:#ffffff; font-weight:100; font-size:15px; border:none; vertical-align:top; transition:all 0.5s;}
+.form-sec .inn input[type="submit"]:hover{ background:#cd8c19; }
+.form-sec .inn input[type="email"]{display:table-cell; height:40px; box-sizing:border-box; padding-left:30px; padding-right:30px; width:60%; border:1px solid #eaa62d; vertical-align:top; text-align:center; }
+.coming-inn ul{display:block; padding:20px 0 20px;}
+.coming-inn ul li{display:inline-block; margin-left:10px; margin-right:10px;}
+.coming-inn ul li a{font-size:22px; color:#ffffff; transition:all 0.5s}
+.coming-inn ul li a:hover{color:#cd8c19;}
+.bottom{text-align:center; font-size:16px; color:#ffffff; position:relative; top:35px; font-weight:100;}
+.bottom a{padding:5px 20px; color:#ffffff; background:#cd8c19; margin-left:2px;}
+.thanks{font-size: 20px; color: #ffffff;}
+.thanks a{padding:5px 20px; color:#ffffff; background:#cd8c19; margin-left:2px;}
+.error{display: block; color: #ff0000; font-size: 15px; margin-bottom: 3px; display: none;}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+	.container > header{
+		text-align: center;
+	}
+	.bottom{top:2px;}
+	.bottom a{display:inline-block; margin-top:10px;}
+}
+@media screen and (max-width: 640px) {
+	.coming .coming-inn{padding:30px 0px 30px; width:500px;}
+	.coming{bottom:30px;}
+	.bottom{top:-8px;}
+	.bottom a{display:block; width:50%; margin:auto; margin-top:10px;}
+}
+
+@media screen and (max-width: 480px) {
+	.coming .coming-inn{padding:30px 0px 10px; width:100%;}
+	.coming{bottom:40px;}
+	.form-sec .inn input[type="email"] {width:100%; margin-bottom:8px;}
+	.form-sec .inn input[type="submit"] {width:100%;}
+}

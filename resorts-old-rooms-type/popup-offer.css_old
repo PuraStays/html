@@ -1,0 +1,113 @@
+.offerPopup{}
+.popup_container{
+	display: table;
+	width: 100%;
+}
+.popup_container .popup_image_container{
+	width: 30%;
+	display: table-cell;
+	overflow: hidden;
+	background: url("images/left_bg.jpg") no-repeat center bottom;
+}
+.popup_container .popup_container_inner{
+	width: 70%;
+	display: table-cell;	
+}
+.popup_container .popup_container_inner .popup_padding{
+	padding: 0 20px;	
+}
+
+.popup_container .popup_container_inner .popup_header{
+	border-bottom: 1px solid #ededed;
+	position: relative;
+	padding: 15px 20px;
+}
+
+.popup_container .popup_container_inner .popup_header a.close{
+	width: 36px; 
+	height: 36px;
+	background: url("images/close.png") no-repeat center center;
+	position: absolute;
+	right: 20px; 
+	top: 20px;
+	cursor: pointer;
+	z-index: 9999;
+}
+.popup_container .popup_container_inner .popup_header h2{
+	color: #2a1b00;
+	padding-right: 40px;
+}
+.popup_container .popup_container_inner .popup_header h2 sup{
+	position: relative;
+	top: -2px;
+}
+.popup_container .popup_container_body{
+	max-height: 400px;
+	min-height: 100px;
+	overflow-y: auto;
+	position: relative;
+}
+.condition{
+	position: absolute;
+	right: 30px; 
+	bottom: 2px;
+	font-size: 11px;
+	line-height: 11px;
+}
+.popup_container .popup_container_body.popup_padding{
+	padding: 10px 30px 40px 20px;
+}
+
+.popup_container .popup_container_body .popup_content > div{
+	margin-bottom: 40px;
+}
+
+.popup_container .popup_container_body .popup_content > div:last-child{
+	margin-bottom: 0;
+}
+
+.popup_container .popup_container_body .popup_content > div h5{
+	font-size: 16px;
+	font-weight: bold;	
+}
+.popup_container .popup_container_body .popup_content > div span{
+	font-family: sans-serif;
+	font-weight: 100;
+}
+.popup_container .popup_container_body .popup_content > div > div{
+	padding: 10px;
+	text-align: center;
+	border: 1px dashed #2a1b00;
+	font-weight: bold;
+}
+.popup_container .popup_container_body .popup_content > div > div span{
+	font-family: sans-serif;
+	font-weight: 100;	
+}
+.popup_container .popup_footer{
+	border-top: 1px solid #ededed;
+	position: relative;
+	padding: 20px 30px 20px 20px !important;
+}
+.popup_container .popup_footer label{
+	font-size: 13px;
+}
+.popup_container .popup_footer input{
+	outline: none;
+}
+.popup_container .popup_footer button{
+	padding-left: 10px; 
+	padding-right: 10px;	
+}
+@media only screen and (max-width:639px){
+	.popup_container .popup_image_container{
+		display: none;
+	}
+	.popup_container .popup_container_inner{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width:480px){
+
+}

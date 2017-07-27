@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'gotham-rounded-book';
+    src: url('gotham-rounded-book.eot');
+    src: url('gotham-rounded-book.eot?#iefix') format('embedded-opentype'),
+         url('gotham-rounded-book.woff') format('woff'),
+         url('gotham-rounded-book.ttf') format('truetype'),
+         url('gotham-rounded-book.svg#open_sansextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gotham-rounded-medium';
+    src: url('gotham-rounded-medium-2.eot');
+    src: url('gotham-rounded-medium-2.eot?#iefix') format('embedded-opentype'),
+         url('gotham-rounded-medium-2.woff') format('woff'),
+         url('gotham-rounded-medium-2.ttf') format('truetype'),
+         url('gotham-rounded-medium-2.svg#open_sansextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'GothamRounded-BookItalic';
+    src: url('GothamRounded-BookItalic.eot');
+    src: url('GothamRounded-BookItalic.eot?#iefix') format('embedded-opentype'),
+         url('GothamRounded-BookItalic.woff') format('woff'),
+         url('GothamRounded-BookItalic.ttf') format('truetype'),
+         url('GothamRounded-BookItalic.svg#open_sansextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

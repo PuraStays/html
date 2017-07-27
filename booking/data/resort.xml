@@ -1,0 +1,46 @@
+<hotelogix version="1.0" datetime="2016-04-30T15:39:40">
+  <response>
+    <hotels>
+      <hotel id="G31o9u5WHOFngW4ufH0X7xXNXzT1ozMb76deGNlh7tA|" title="Test Hotel Test Taj(20799)" currencycode="EUR">
+        <status code="1400" message="SUCCESS">
+        <roomtypes>
+          <roomtype id="-4l7C3eT3SUgrCeyZVfhx5AbkvCM8Q7lFZyAWi9W5rA|" title="Maharaja" availableroom="21" basepax="1" maxpax="4" minrooms="1">
+            <description><!--[CDATA[Deluxe category.]]--></description>
+            <imgs>
+              <img src="https://s3.amazonaws.com/livestaygriddata/product-images/roomtypes/roomtype31032016060940770342369.jpeg">
+            </imgs>
+            <amenities>
+              <amenity title="24 hour room service">
+              <amenity title="International direct dial telephone">
+              <amenity title="Air conditioning">
+              <amenity title="Internet Access">
+              <amenity title="added amenities">
+            </amenity></amenity></amenity></amenity></amenity></amenities>
+          </roomtype>
+          <roomtype id="dYOjvx_cEAW-QdAztU8JpkveLd_x9IgK0bBJtE9Nrek|" title="Maharani" availableroom="20" basepax="1" maxpax="4" minrooms="1">
+            <description><!--[CDATA[standard category]]--></description>
+            <imgs>
+              <img src="https://s3.amazonaws.com/livestaygriddata/product-images/roomtypes/roomtype31032016060837517820741.jpeg">
+            </imgs>
+            <amenities>
+              <amenity title="Bath Tub">
+              <amenity title="Cable TV">
+              <amenity title="24 hour room service">
+              <amenity title="International direct dial telephone">
+              <amenity title="Air conditioning">
+              <amenity title="Internet Access">
+              <amenity title="Wi-Fi High speed wireless Internet service">
+              <amenity title="added amenities">
+            </amenity></amenity></amenity></amenity></amenity></amenity></amenity></amenity></amenities>
+          </roomtype>
+        </roomtypes>
+      </status></hotel>
+    </hotels>
+  </response>
+  <request method="search" key="TB5Cu|M2X|MKVY-">
+				<stay checkindate="2016-05-05" checkoutdate="2016-05-06">
+				<pax adult="1" child="0" infant="0">
+				<roomrequire value="1">
+				<limit value="200" offset="0" hasresult="0">
+				</limit></roomrequire></pax></stay></request>
+</hotelogix>

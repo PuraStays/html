@@ -1,0 +1,189 @@
+<div class="login-book" ng-if="showLogin">
+    <div class="modal-header">
+        <h3 class="modal-title">Login</h3>
+        <a href="javascript:void(0)" class="close" ng-click="cancel()">X</a>
+    </div>
+    <div class="modal-body">
+        <div class="subhead">
+            <h5>Please login to your account</h5>    
+        </div>   
+        <form class="login-booking"> 
+            <div class="row">
+                <div class="col-sm-6">
+                    <fieldset class="form-group">
+                        <label>Email Id</label>
+                        <input type="email" ng-model="user.email" name="email" placeholder="Your Email Id" class="form-control" required="required" aria-required="true">
+                    </fieldset>
+                </div>
+                <div class="col-sm-6">
+                    <fieldset class="form-group">
+                        <label>Password</label>
+                        <input type="password" ng-model="user.password" name="password" placeholder="Your Password" class="form-control" required="required" aria-required="true">
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <button class="btn btn-pura active pull-right" type="button" ng-click="login()">Login</button>
+                </div>
+            </div>
+        </form> 
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="or-blk">
+                    <span><i>or</i></span>
+                </div>
+            </div>
+        </div>
+        <div class="row socialbtn">
+            <div class="col-sm-6">
+                <a class="btn btn-social btn-block btn-facebook" href=""><span class="fa fa-facebook"></span> Signin with Facebook</a>
+            </div>
+            <div class="col-sm-6">
+                <a class="btn btn-social btn-block btn-google" href=""><span class="fa fa-facebook"></span> Signin with google</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="or-blk">
+                    <span><i>or</i></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">   
+            <div class="col-sm-12">    
+                <div class="gst" ng-click="goToGuest()"><span class="fa fa-user"></span> Book As a guest user</div>
+            </div>                      
+        </div>
+       
+
+    </div>
+
+    <div class="modal-footer auth">    
+        <p>You don’t have any account yet? <a href="javascript:void(0);" ng-click="goToSignup()">Signup Pura Stays</a></p>  
+    </div>
+</div>  
+
+<div class="signup-book" ng-if="showSignup">
+    <div class="modal-header">
+        <h3 class="modal-title">Signup</h3>
+        <a href="javascript:void(0)" class="close" ng-click="cancel()">X</a>
+    </div>
+    <div class="modal-body">
+        <div class="subhead">
+            <h5>Please signup purastays for creating new account</h5>    
+        </div>   
+        <form class="login-booking"> 
+            <div class="row">
+                <div class="col-sm-6">
+                    <fieldset class="form-group">
+                        <label>Name</label>
+                        <input type="text" ng-model="reg.name" name="Name" placeholder="Your name" class="form-control" value="" required="required" aria-required="true">
+                    </fieldset>
+                </div>
+                <div class="col-sm-6">
+                    <fieldset class="form-group">
+                        <label>Phone</label>
+                        <input type="number" ng-model="reg.mobile" name="Mobile" placeholder="Your phone" class="form-control" value="" required="required" aria-required="true">
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <fieldset class="form-group">
+                        <label>Email Id</label>
+                        <input type="email" ng-model="reg.email" name="email" placeholder="Your Email Id" class="form-control valid" value="" required="required" aria-required="true" aria-invalid="false">
+                    </fieldset>
+                </div>
+                <div class="col-sm-6">
+                    <fieldset class="form-group">
+                        <label>Password</label>
+                        <input type="password" ng-model="reg.password" name="password" placeholder="Your Password" class="form-control valid" value="" required="required" aria-required="true" aria-invalid="false">
+                    </fieldset>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-12">
+                    <button class="btn btn-pura active pull-right" ng-click="signupNormal()" type="button">Signup</button>
+                </div>
+            </div>
+        </form> 
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="or-blk">
+                    <span><i>or</i></span>
+                </div>
+            </div>
+        </div>
+        <div class="row socialbtn">
+            <div class="col-sm-6">
+                <a class="btn btn-social btn-block btn-facebook" href=""><span class="fa fa-facebook"></span> Signin with Facebook</a>
+            </div>
+            <div class="col-sm-6">
+                <a class="btn btn-social btn-block btn-google" href=""><span class="fa fa-facebook"></span> Signin with google</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="or-blk">
+                    <span><i>or</i></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">   
+            <div class="col-sm-12">    
+                <div class="gst" ng-click="goToGuest()"><span class="fa fa-user"></span> Book As a guest user</div>
+            </div>                      
+        </div>
+    </div>
+
+    <div class="modal-footer auth">    
+        <p>Already registered? <a href="javascript:void(0);" ng-click="goToLogin()">Signin</a></p>  
+    </div>
+</div>  
+
+<div class="login-book" ng-if="showGuest">
+    <div class="modal-header">
+        <h3 class="modal-title">Guest Checkout</h3>
+        <a href="javascript:void(0)" class="close" ng-click="cancel()">X</a>
+    </div>
+    <div class="modal-body">
+        <div class="subhead">
+            <h5>Fill the details for guest checkout</h5>    
+        </div>   
+        <form class="login-booking"> 
+            <div class="row">
+                <div class="col-sm-6">
+                    <fieldset class="form-group">
+                        <label>Name</label>
+                        <input type="text" ng-model="guest.name" name="name" placeholder="Your name" class="form-control" value="" required="required" aria-required="true">
+                    </fieldset>
+                </div>
+                <div class="col-sm-6">
+                    <fieldset class="form-group">
+                        <label>Phone</label>
+                        <input type="number" ng-model="guest.mobile" name="Mobile" placeholder="Your phone" class="form-control" value="" required="required" aria-required="true">
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <fieldset class="form-group">
+                        <label>Email Id</label>
+                        <input type="email" ng-model="guest.email" name="email" placeholder="Your Email Id" class="form-control valid" value="" required="required" aria-required="true" aria-invalid="false">
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <button class="btn btn-pura active pull-right" type="button" ng-click="signupGuest()">Book now</button>
+                </div>
+            </div>
+        </form> 
+    </div>
+
+    <div class="modal-footer auth">    
+        <p><a href="javascript:void(0);" ng-click="goToSignup()">Signup</a> | <a href="javascript:void(0);" ng-click="goToLogin()">Login</a></p>  
+    </div>
+</div>  

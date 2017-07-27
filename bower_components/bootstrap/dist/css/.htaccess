@@ -1,0 +1,21 @@
+#Options +FollowSymlinks
+
+RewriteEngine on
+RewriteBase /
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+
+
+ErrorDocument 404 /404.php
+
+#RewriteCond %{REQUEST_URI} !\.(?:css|js|jpe?g|gif|png)$ [NC]
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^around-nanital/deja-vu-pura-stays-naukuchiatal?$ resort.php?id=27 [NC,L]
+
+#RewriteRule ^/resort.php?id=26/?$ resort.php?id=28  [R=301,L]
+
+
+# rewriterule ^resort.php?id=28(.*)$ http://purastays.com/resort/id/28$1 [r=301,nc]
+# RewriteRule around-nanital/deja-vu-pura-stays-naukuchiatal resort.php?id=28

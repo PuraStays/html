@@ -1,0 +1,34 @@
+{
+	"resorts":[
+		{
+			"id": "001",
+			"name": "Resort 1",
+			"value": "Resort 1"
+		},
+		{
+			"id": "002",
+			"name": "Resort 2",
+			"value": "Resort 2"
+		},
+		{
+			"id": "003",
+			"name": "Resort 3",
+			"value": "Resort 3"
+		},
+		{
+			"id": "004",
+			"name": "Resort 4",
+			"value": "Resort 4"
+		},
+		{
+			"id": "005",
+			"name": "Resort 5",
+			"value": "Resort 5"
+		},
+		{
+			"id": "006",
+			"name": "Resort 6",
+			"value": "Resort 6"
+		}
+	]
+}

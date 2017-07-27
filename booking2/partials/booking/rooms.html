@@ -1,0 +1,32 @@
+<div class="section rooms">
+    <div class="sec-inner">
+        <div class="question-sec">
+            <h2>Please choose room type and number</h2>
+            <div class="box">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-12">
+                        <a href="javascript:void(0);" ng-click="open('lg')" class="btn btn-block btn-lg btn-pura-nor"><i class="fa fa-plus-circle" aria-hidden="true" ng-if="!selected"></i> Choose Rooms <i class="fa fa-pencil" aria-hidden="true" ng-if="selected"></i></a>
+                    </div>
+                </div>
+            </div>            
+            <div class="row">
+                <ul class="selected">
+                    <li ng-repeat="room in rooms track by $index">
+                        <div class="selected-box">
+                            <div class="selected-box-inn">
+                                <div class="one"><figure><img ng-src="{{room.imgs.img._src}}" alt=""></figure> <span>{{room._title}}</span></div>
+                                <div class="two"><i class="fa fa-bed" aria-hidden="true" style="color:#A0A0A0"></i> <strong>{{room.room_count}}</strong></div>
+                                <div class="three"><span ng-click="remove($index)">delete <i class="fa fa-trash-o" aria-hidden="true"></i></span></div>
+                            </div>
+                        </div>
+                    </li>                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="btn-sec">
+    	<a href="javascript:void(0);" ng-click="back()" class="btn btn-success btn-pura left"><i class="fa fa-backward" aria-hidden="true"></i> back</a>
+    	<a href="javascript:void(0);" ng-click="next()" class="btn btn-success btn-pura right" ng-class="{'active': activebtn}">Next <i class="fa fa-forward" aria-hidden="true"></i></a>
+    	<div class="clearfix"></div>
+    </div>
+</div>

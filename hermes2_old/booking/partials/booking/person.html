@@ -1,0 +1,32 @@
+<div class="section person">
+    <div class="sec-inner">
+        <div class="question-sec">
+            <h2>How many people you want to travel along?</h2>
+            <div class="box">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="adult">Adult</label>
+                            <input type="number" class="form-control" id="adult" ng-model="person.adult.number">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="child">Children</label>
+                            <input type="number" value="0" class="form-control" id="child" ng-model="person.child.number">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="text-center" ng-class="{'red': txtcolor}">{{person.adult.number}} Adult, {{person.child.number}} Children</p>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="btn-sec">
+    	<a href="javascript:void(0);" ng-click="back()" class="btn btn-success btn-pura left"><i class="fa fa-backward" aria-hidden="true"></i> back</a>
+    	<a href="javascript:void(0);" ng-click="next()" class="btn btn-success btn-pura active right" ng-class="{'active': activebtn}">Next <i class="fa fa-forward" aria-hidden="true"></i></a>
+    	<div class="clearfix"></div>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+<div class="modal-header">
+    <h3 class="modal-title" ng-if="!showErrorRoom">List of Room types</h3>
+    <h3 class="modal-title" ng-if="showErrorRoom">Stay Availability Status</h3>
+    <a href="javascript:void(0)" class="close" ng-click="cancel()">X</a>
+</div>
+
+<div class="modal-body" ng-if="showErrorRoom">
+    <div class="subhead">
+        <h5>{{showErrorMsg}}</h5>  
+        <div class="changedate"><a class="btn btn-success btn-pura" href="javascript:void(0);" ng-click="changeDate()">change date</a></div>  
+    </div>  
+</div>    
+
+<div class="modal-body" ng-if="!showErrorRoom">
+    <div class="subhead">
+        <h5>{{hotel._title}}</h5>    
+    </div>    
+    
+    <div class="tab-section">
+        <div>
+            <uib-tabset active="activeForm">
+              <uib-tab index="0" heading="Select Rooms">    
+                <div class="resort-rooms">
+                    <ul>
+                        <li ng-repeat="room in rooms">
+                            <div roomlist roomdata="{{room}}" addroom="addingRooms(roombooked)">
+                        </li>    
+                    </ul>
+                </div>
+            </uib-tab>
+            <uib-tab index="1" heading="About Resort">    
+                <div class="resort-rooms">
+                    <h4 ng-bind-html="resortDetails.name"></h4>
+                    <div class="banner"><img ng-src="{{resortDetails.banner}}"></div>
+                    <div class="description">
+                        <p ng-bind-html="resortDetails.description"></p>
+                    </div>
+                </div>
+            </uib-tab>
+            <uib-tab index="2" heading="Gallery">    
+                <div class="resort-rooms">
+                    <h4>Gallery</h4>
+                    <div class="gallery-resort">
+                        <div class="row">                            
+                            <ul>
+                                <li ng-repeat="img in finalGall"><img ng-src="{{img._src}}"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </uib-tab>
+           </uib-tabset> 
+        </div>
+    </div>
+        
+</div>
+
+<div class="modal-footer" ng-if="!showErrorRoom">    
+    <button class="btn btn-pura" type="button" ng-click="ok()">OK</button>    
+</div>

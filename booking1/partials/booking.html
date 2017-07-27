@@ -1,0 +1,23 @@
+<nav class="navbar navbar-inverse navbar-fixed-top pura">
+  <div class="container">
+    <div class="navbar-header">          
+      <a class="navbar-brand logo" href="#"><img src="images/logo.png" alt="pura" /></a>
+      <a class="summary-btn" href="javascript:void(0);" ng-click="openSummry()"><i class="fa fa-bars" aria-hidden="true"></i> Summary </a>
+    </div>
+    <div class="navbar-collapse collapse" id="searchbar">
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<section class="container topgap">    	
+	<div class="main">
+    	<div class="row">
+        	<div class="col-sm-8">                
+            	<div class="page {{pageClass}}" ui-view></div>                	
+            </div>
+            <div class="col-sm-4 sideToggle ng-if" ng-if="openSmry">
+            	<div ng-include="'partials/sidebar.html'"></div>
+            </div>
+        </div>
+    </div>
+</section>
