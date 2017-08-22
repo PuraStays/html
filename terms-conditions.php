@@ -213,10 +213,10 @@ function convert_email($email) {
                 <div class="policy-sec"> 
 					<p>By using the Website and/or by providing your information, you consent to the collection and use of the information you disclose on the Website in accordance with this privacy policy.</p>
 					<p>In accordance with Information Technology Act, 2000, if you wish to contact Pura Stays about this privacy policy or privacy related issues via email, you may send an email to <a href="mailto:<?php echo convert_email('info@purastays.com'); ?>"> <?php echo convert_email('info@purastays.com'); ?></a>. Alternatively, you may send your concern via postal mail/courier at the following address:</p>
-					<p><strong>Pura Holidays & Stays Private Limited</strong><br/>
-                    N14/29, Lower Ground Floor<br/>
-                    Bougainvillea Marg, DLF Phase 2<br/>
-                    Gurgaon – 122002, Haryana, India</p>
+					<p><strong>Pura Holidays &amp; Stays Private Limited</strong><br/>
+                    401-402, 4th Floor, Green Woods Plaza,<br/>
+                    Netaji Subhash Marg, Block B, Sector 45,<br/>
+                    Gurgaon – 122003, Haryana, India</p>
                 </div>
 			</div>
         </div>

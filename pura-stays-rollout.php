@@ -70,38 +70,17 @@
         	<div class="container">
                 <div class="policy-sec">
 
-                    <p>Structured in 2016, Pura Stays started roll out of its concept to provide experience led accommodation for leisure travel. Given the rising weekend culture and the
-need for quality holiday accommodation for quick getaways, Pura Stays curates a
-selection of holiday stays around a leisure travel destination or a cluster as we call
-it, with ‘Around Nainital’ being the first cluster to be rolled out. The handpicked
-collection comprises of thoughtfully designed living spaces like boutique resorts,
-holiday homes, lodges and villas with standardised guest room features and
-reliable service quality.</p>
+                    <p>Structured in 2016, Pura Stays started roll out of its concept to provide experience led accommodation for leisure travel. Given the rising weekend culture and the need for quality holiday accommodation for quick getaways, Pura Stays curates a handpicked collection of holiday stays around a leisure travel destination or a cluster as we call it, with ‘Around Nainital’ being the first cluster to be rolled out.</p> 
 
-                    <p>Pura Stays doorway is for small inventory holiday stays having less than 30
-accommodation units, thus differentiating form large resorts and hotels, for a
-unique stay experience. Focussed at improving the guest satisfaction levels, it
-provides a centrally managed marketing system and a cluster level operating
-system for its collection of holiday stays.
-Pura Stays is here for passionate travellers who want to explore, connect and
-revive in their own style, who look forward to make their own travel itinerary from
-discovering quick getaways with quality holiday accommodation to experiencing
-local activities and tempting food. The search for a refreshing holiday break, is
-further simplified as travellers and customers of all kinds can select their stays as
-per some well recognised moods to travel.</p>
+                    <p>By providing a dedicated operating and marketing system for the collection, it ensures standardised guest room features and reliable service quality, with choice of smartly programmed local experiences at each holiday stay.</p> 
 
-                    <p>Furthermore, local experience sets and enriched menu to savour upon were
-introduced at each property, to accompany the guests at every step. From
-breakfast to All-Day Snacks Menu, from Celebration Dinner to Nature trails and
-Local Adventure Sport; there is plenty to choose from, for a memorable holiday.
-Forced package? No, you won’t find that here on this website. Pick and pay for
-what you actually want on a holiday and that’s how, we are different from each
-holiday stay, out there!</p>
+                    <p>Pura Stays doorway is for small inventory holiday stays having less than 30 accommodation units, thus differentiating form large resorts and hotels, for a unique stay experience. The handpicked collection of boutique resorts, holiday homes, cottages and villas offer thoughtfully designed living spaces with contemporary guest facilities.</p> 
 
-                    <p>Our <u>cluster wise roll out</u> ensures greater choice of holiday accommodation across
-midscale, upscale and luxury properties. Our aim is to grow tremendously across
-India and offer a greater choice of getaways to fervent globe trotters. An
-experience led holiday matters and will always be our priority.</p>
+                    <p>Pura Stays is here for passionate travellers who want to explore, connect and revive in their own style, who look forward to make their own travel itinerary from discovering quick getaways with quality holiday accommodation to experiencing local activities and tempting food. The search for a refreshing holiday break, is further simplified as travellers and customers of all kinds can select their stays as per some well recognised moods to travel.</p> 
+
+                    <p>Furthermore, local experience sets and enriched menu to savour upon were introduced at each property, to accompany the guests at every step. From breakfast to All-Day Snacks Menu, from Celebration Dinner to Nature trails and Local Adventure Sport; there is plenty to choose from, for a memorable holiday.</p> 
+
+                    <p>Our <u>cluster wise roll out</u> ensures greater choice of holiday accommodation across midscale, upscale and luxury properties. We aim to grow tremendously across India and offer a greater choice of getaways to fervent globe trotters. An experience-led holiday matters and will always be our priority.</p>
 
                </div>
             </div>

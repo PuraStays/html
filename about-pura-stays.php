@@ -68,13 +68,15 @@
     <section class="sec contact grey">
     	<div class="container">
         	<h1 class="head1">About Us</h1>
-            <p>PuraStays represents a collection of experience-led holiday accommodation around a leisure travel destination. Our assorted array of boutique resorts, holiday homes, lodges and villas offer home-like living spaces, for a unique holiday experience.</p>
+            
+            <p>Pura Stays represents a collection of holiday stays around a leisure travel destination. The handpicked collection of boutique resorts, holiday homes, cottages and villas offer thoughtfully designed living spaces with standardised guest room features.</p>
 
-            <p>Pura is a Spanish word for 'pure' which inspires the product. Our dedicated operating and marketing system for holidays stays ensures standardised guest room features and reliable service quality, with a choice of smartly programmed local experiences.</p>
+            <p>Our dedicated operating and marketing system for the collection ensures contemporary guest room facilities and reliable service quality, with a choice of smartly programmed local experiences at each holiday stay.</p>
 
-            <p>Be it a short break, a quick weekend getaway or an extended holiday; PuraStays team understands what inquisitive travellers want; and therefore, has crafted a doorway, which would enable them to book a refreshing break within a few clicks.</p>
+            <p>Pura is a Spanish word for ‘pure’ which inspires the product. Be it a short break, a quick weekend getaway or an extended holiday; Pura Stays travel mood assortment of holiday stays is a doorway for refreshing holidays.</p>
 
             <p>Moreover, we are a bunch of dedicated professionals with extensive experience in hospitality industry, carving a niche for holiday makers.</p>
+
 
       </div>    
                 
@@ -141,7 +143,7 @@
                       		<div class="team-blk">
                             <figure><img src="images/tushar-rastogi.jpg" alt="Tushar Rustagi"></figure>
                             <div class="content">
-                                <h4>Tushar Rustagi<span>Content Executive &amp; Social Media Marketer</span></h4>
+                                <h4>Tushar Rustagi<span>Content &amp; Social Media</span></h4>
                                 <p>Holding a management degree and new found love for content development – Tushar loves to express and has adjoined his passion and profession.</p>
                             </div>
                           </div>
