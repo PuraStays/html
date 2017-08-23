@@ -155,7 +155,9 @@ div#mood h3{font-weight:bold;font-size:20px;}
 .exp-block .exp-txt{text-align:left;max-height:170px;width:100%;padding-top:15px;white-space:normal;overflow:hidden;text-overflow:ellipsis;font-size:14px;-webkit-box-orient:vertical;}
 .exp-block .exp-txt p{text-align:justify;}
 .exp-block .btn-blk{padding-top:25px;}
-.social-sec{background:#e9e7e0;padding:40px 0;text-align:center;position:relative;z-index:3;}
+.quick-weekend {border-top: 1px solid #ededed; border-bottom: 1px solid #ededed; margin-top: 60px;
+    padding-bottom: 60px;}
+.social-sec{padding:40px 0;text-align:center;position:relative;z-index:3; border-top: 1px solid #ededed;}
 .social-sec ul li{display:inline-block;margin-left:10px;margin-right:10px;}
 .social-sec ul li a{display:block;font-size:32px;background:#EAA62D;color:#e9e7e0;padding:30px;width:90px;height:90px;border-radius:50px !important;-webkit-transition:-webkit-transform .8s ease-in-out;-ms-transition:-ms-transform .8s ease-in-out;transition:transform .8s ease-in-out;border:1px solid #d59626}
 .social-sec ul li a.fa-facebook{transition:all 0.5s}
@@ -916,6 +918,7 @@ p{font-size:14px;}
 .step.step1.step12{display:none;}
 .package-container .step .step-innner{min-height:250px;}
 .package-container .step .step-innner p{line-height:18px;}
+.quick-weekend{ margin-top: 30px; padding-bottom: 30px;}
 }
 @media only screen and (max-width:640px){.container{width:480px;}
 .pura-banner video{width:120%;}

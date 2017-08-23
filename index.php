@@ -595,6 +595,21 @@
     if(!$db->is_mobile())
         {
             ?>
+
+            <section class="sec quick-weekend">
+                <div class="container">
+                    <h2>For quick weekend getaways</h2>
+                    <div class="sec-container">
+                        <p>Our home-like living spaces have been enriched with local experiences, for you all, to open up a new chapter – filled in with excitement and adventures, throughout; whenever you plan to vacate from the city and shift your mind towards a resting weekend getaway! Pura Stays is not in existence just for comfort and qualitative standardized accommodation aspects, but also for a planned and organized vacation, for our visitors. To stand out from all the commercial stays; our villas/ cottages/ boutique resorts and holiday homes offer a unique holiday experience.</p>
+
+                        <p>Our properties have been categorized on the basis of different travel moods. Focusing on different themes, we intend to place the right person in their mood, at the right stay! Depending on how an individual operates, throughout the year, our properties run by different offers (or seasonal deals).</p>
+
+                        <p>To make your vacation, especially in two-day or long weekend period, we consider time-in-hand and make the best use out of your estimated schedule! From adventurous trails into the dense forests trails to a peaceful lunch, with a view of clear skies; we have it all!</p>
+
+                    </div>
+                </div>
+            </section>
+
             <section class="sec exp">   
             	<div class="container">
                 	<h2>Travel Tales</h2>
