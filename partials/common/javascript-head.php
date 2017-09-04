@@ -1,0 +1,1 @@
+<script src="<?= STATIC_ROOT ?>/bower_components/jquery/dist/jquery.min.js"></script>

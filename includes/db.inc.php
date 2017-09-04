@@ -1,5 +1,5 @@
 <?php
-//include_once("config.inc.php");
+include_once("config.php");
 ini_set('display_errors', '0');
 session_start();
 class DB
@@ -9,11 +9,10 @@ class DB
 			 var $pwd="";
 			 var $database="groz-app";
 */
- 			 var $host="52.76.246.184"; 
-			 var $user="sanghu";
-			 var $pwd='sanghu';
-			 var $database="purastays";
-
+ 			 var $host=PURA_HOST; 
+			 var $user=PURA_USER;
+			 var $pwd=PURA_PASSWORD;
+			 var $database=PURA_DATABASE;
 			 
 			 var $conn=NULL;
 			 var $result=false;

@@ -1,0 +1,1 @@
+<script src="<?= STATIC_ROOT ?>/js/purastays_experience_module.js"></script>

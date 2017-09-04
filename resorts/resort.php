@@ -7,16 +7,6 @@
 <head>
     <?php
         ini_set("display_errors", '1');
-        /*
-		$id = $_REQUEST['id'];
-        if($id=="")
-        {
-        printf("<script>location.href='../index.php'</script>");       
-        exit();
-        }
-		*/
-        //$id = 27;
-
         include("../includes/db.inc.php");
         $db = new DB();
         $id = $_REQUEST['id'];
@@ -29,17 +19,6 @@
     <title><?= $row['Meta_Title']; ?></title>
     <meta name="description" content="<?= $row['Meta_Description']; ?>">
     <meta name="keywords" content="<?= $row['Meta_Keyword']; ?>">
-    <link rel="shortcut icon" href="../images/favicon.ico">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	
-    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/bootstrap-social.css">
-    <link rel="stylesheet" href="../css/animate.css">
-    <link href="../css/custom.css" rel="stylesheet">    
-    <link href="../css/popup-offer.css" rel="stylesheet"> 
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
@@ -59,43 +38,38 @@
     <meta property="og:site_name" content="Pura Stays" />
     <meta property="fb:admins" content="507345255" />
     <meta property="fb:app_id" content="1152657561422465" />
+
+    <!-- stylesheets -->
+    <?php include_once("../partials/common/stylesheet.php") ?>
+    <?php include_once("../partials/resorts/stylesheet.php") ?>
     
-    <link href="../libs/lightslider-master/dist/css/lightslider.min.css" rel="stylesheet">
-    <link href="../bower_components/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
-    <link href="../css/jquery.bxslider.css" rel="stylesheet">
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script> 
+    <!-- javascript head section-->
+    <?php include_once("../partials/common/javascript-head.php") ?>
+    <?php include_once("../partials/resorts/javascript-head.php") ?>
+    
+    <!-- set page properties -->
+    <script type="text/javascript">
+        localStorage.clear();
+        localStorage.setItem("page", "<?php echo pathinfo(__FILE__, PATHINFO_FILENAME); ?>");
+        localStorage.setItem("id", "<?php echo $_REQUEST['id']; ?>");
+        var mapLocation = {
+            "lat": <?= $row['Lat']; ?>,
+            "lng": <?= $row['Lng'] ?>
+        };
+        localStorage.setItem("location", JSON.stringify(mapLocation));
+    </script>
+
     <script>
         var resource = {
             "page": "<?php echo pathinfo(__FILE__, PATHINFO_FILENAME); ?>",
             "id": "<?php echo $id = $_REQUEST['id']; ?>"
-        }
+        }        
     </script>
-    
-	<style>
-        ul{
-            list-style: none outside none;
-            padding-left: 0;
-            margin: 0;
-        }
-        .demo .item{
-            margin-bottom: 60px;
-        }
-        .content-slider li{
-            background-color: #ed3020;
-            text-align: center;
-            color: #FFF;
-        }
-        .content-slider h3 {
-            margin: 0;
-            padding: 70px 0;
-        }
-        .demo{
-            width: 800px;
-        }
-    </style>
+
 	
     <script>
       var myLatLng = {lat: <?= $row['Lat']; ?>, lng: <?= $row['Lng']; ?>};
+      console.log(JSON.parse(localStorage.getItem(location)));
       function initMap() {
           
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -128,15 +102,14 @@
                 center: myLatLng
             });
 
-            var marker = new google.maps.Marker({
-	          position: myLatLng,
-	          map: map2,
-	          title: 'Pura',
-	          icon: '../images/map-marker.png'
-	        });
-            
-        })
-      })      
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map2,
+                    title: 'Pura',
+                    icon: '../images/map-marker.png'
+    	        });
+            })
+        })      
     </script>
     <?php include_once("../includes/taghead.php") ?>
   </head>
@@ -490,7 +463,7 @@
                                 <div><span class="glyphicon glyphicon-calendar"></span>Book your stay</div>
                             </div>
                             <div class="form-body">
-                                <img class="window-loader" src="/images/loading.gif" width="30">
+                                <img class="window-loader" src="../images/loading.gif" width="30">
                                 <div id="BEx4IDaY3bWD">
                                     <div id="BEx4IDaY3bWR" class="BEx4ZXaY3bWR"></div>
                                     <input type ="hidden" value="YYcDka7DAsWh4JBPKmq5Pg" id="BEx4ZXaPkNmGuid">
@@ -505,14 +478,7 @@
                 </div>
             </div>
         </div>
-    	<style>
-            #BEx4IDaY3bWD .BEx4ZXaY3bWR{border-top: 5px solid transparent !important;}
-            #BEx4IDaY3bWD select.BEx4ZXaY3bPC, #BEx4IDaY3bWD select.BEx4ZXaY3bPP{background: #ffffff !important;}
-            #BEx4IDaY3bWD input[type=text]{background: #ffffff !important;}
-            .form-body {position: relative; height:150px;}
-            .window-loader{position: absolute; left: 50%; top: 50%; margin-left: -15px; margin-top: -15px;}
-            .form-body #BEx4IDaY3bWD{150px; visibility: hidden;}
-        </style>
+    
         <script>
             $('document').ready(function(){
                 setTimeout(function(){
@@ -782,10 +748,11 @@
     </section>
     
     <?php include_once("../includes/social-sec.php");?>
-    <link href="../css/elements.css" rel="stylesheet">
 	
     
-
+    <!-- javascript body section-->
+    <?php include_once("../partials/common/javascript-body.php") ?>
+    <?php include_once("../partials/resorts/javascript-body.php") ?>
      
     
     
