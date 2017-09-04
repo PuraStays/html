@@ -471,17 +471,20 @@ footer .copyright{text-align:center;padding-top:40px;color:#D0D0D0;font-size:13p
 .panel-group.booking-history{width:100%;}
 .package-container{margin-top:40px;}
 .package-container .package-inner{min-height:350px;width:100%;display:table;position:relative;}
-.package-container .package-inner .step{display:table-cell;width:50%;padding:40px;position:relative;}
+.package-container .package-inner .step{display:table-cell;width:50%;padding:40px 40px 80px 40px;position:relative;}
+.package-container .package-inner .step .btn-cntr{position: absolute; bottom: 0; left: 0; width: 100%; padding: 30px 0; display: none;}
+.package-container .package-inner .step .btn-cntr .backlnk2{bottom: auto;}
 .package-container .step .step-innner{text-align:left;position:relative;z-index:10;}
 .package-container .step .step-innner p{font-size:14px;text-align:justify;}
 .package-container .package-inner .step.pura-package{background:#fdfdfd;}
 .package-container .package-inner .step.pura-moods{background:#faf8f8;}
 .package-container .package-inner .step.pura-program{background:#faf8f8;}
-.package-container .package-inner .step.pura-activity{background:#eaa62d;color:#ffffff;}
+.package-container .package-inner .step.pura-activity{background:#eae7e0;color:#333333;}
 .package-container .package-inner .step.pura-gallery{background:#faf8f8;}
 .package-container .step.left .step-innner{padding-left:40px;}
 .package-container .step.right .step-innner{padding-right:40px;}
-
+.package-container .package-inner .step.step3 {display: none;}
+.experience-sec {display: none;}
 
 .lnq-container{margin-top:25px;}
 .lnq-container p{font-weight:bold;color:#8b8b8b;}
@@ -491,13 +494,14 @@ footer .copyright{text-align:center;padding-top:40px;color:#D0D0D0;font-size:13p
 .lnq-container2{margin-top:10px;}
 .lnq-container2 ul li{display:block;margin-bottom:6px;text-align:left;}
 .lnq-container2 ul li a{padding:6px 10px;background:#c0861e;border:2px solid #c0861e;color:#ffffff;text-decoration:none;display:block;transition:all 0.5s;font-size:12px;font-weight:bold;cursor:pointer;text-transform:uppercase;}
-.backlnk2{position:relative;bottom:-20px;text-decoration:none;color:#ffffff;transition:0.5s all;border:1px solid #ffffff;padding:5px 10px;}
+.backlnk2{position:relative;bottom:-20px;text-decoration:none;color:#eaa62d;transition:0.5s all;border:1px solid #eaa62d;padding:5px 10px;}
 .backlnk2:hover,.backlnk2:focus, .backlnk2:active{text-decoration:none;background:#ffffff;color:#eaa62d;}
 .backlnk{position:relative;bottom:-20px;text-decoration:none;color:#eaa62d;transition:0.5s all;padding:5px 10px;border:1px solid #eaa62d;}
 .backlnk:hover,.backlnk:focus, .backlnk:active{text-decoration:none;background:#eaa62d;color:#ffffff;}
 .cat{display:inline-block;padding:2px 8px;background:#c0861e;color:#ffffff;font-size:11px;}
 .t{font-family:Verdana, Geneva, sans-serif;font-size:14px;}
 .t.t1{margin-right:30px;}
+.lnq-container3 {margin-top: 10px;}
 .lnq-container3 ul li{width:30%;transition:all 0.5s;border:2px solid transparent;height:90px;overflow:hidden;float:left;margin-bottom:2px;margin-right:2px;}
 .lnq-container3 ul li:hover{border-color:#eaa62d;}
 .lnq-container3 ul li a{display:inline-block;}
@@ -790,6 +794,9 @@ footer h4{font-size:14px;}
 .navbar-toggle .navbar-toggle .icon-bar{background:#eaa615;}
 }
 @media only screen and (max-width:767px){
+.package-container .package-inner .step .btn-cntr{display: block;}
+.package-container .package-inner .step .backlnk2.desktop{display: none}
+.package-container .package-inner .step.pura-activity {background: #faf8f8;}
 .ideal .grey-container {height: auto;}
 .abt-banner{display: none;}
 .about-container .abt-txt {height: 450px;}
@@ -890,10 +897,10 @@ p{font-size:14px;}
 .step .btn-sec{display:block;}
 .package-container .package-inner{display:block;}
 .package-container .package-inner .step{display:block;width:100%;padding-bottom:80px;}
+.package-container .package-inner .step.step22, .package-container .package-inner .step.step31, .package-container .package-inner .step.step32{display: none}
 .package-container .step.left .step-innner{padding-left:0;}
 .package-container .step.right .step-innner{padding-right:0;}
 .package-container .package-inner .step .step-innner{text-align:center;}
-.backlnk2,.backlnk{display:none;}
 .resNav{display:block;}
 .slider-left .left-sec{float:none;}
 .slider-left .right-sec{float:none;}

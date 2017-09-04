@@ -113,7 +113,7 @@
     </script>
     <?php include_once("../includes/taghead.php") ?>
   </head>
-  <body onload="loadPackage()">
+  <body>
   <?php include_once("../includes/tagbody.php") ?> 
 
     <div class="overlay"><img src="../images/loading.gif" alt="Pura Stays" width="60px" height="60px"></div>
@@ -586,94 +586,7 @@
         </div>                
     </section>
     
-    <section class="sec package">
-    	<div class="container">
-        	<h2>Experience</h2>
-        </div>    
-		<div class="package-container">
-            
-                <div class="package-inner">
-                    <div class="step step1 step11 left pura-package">
-                    	<div class="overlay_inn"></div> 
-                        <div class="step-innner">
-                            <h3><b>Start Exploring!</b></h3>
-                            <p>The more you travel, the more you learn about the world and yourself. Take the chance to embrace rare experiences that help you unwind and uncover new territory. Discover the myriad manifestations of nature on wilderness walks, treks, hikes and nature picnics. Go on a village tour and witness the lives of the locals, their culture and tradition. </p>
-							<p>Revive your soul with thrilling and daring adventure activities like paragliding, rappelling, kayaking or ATV driving. The stays have been enhanced for you, keeping in mind the indigenous beauty as well as diverse activities to partake in. There is no forced travel package because we know that you recurrently yearn for something out of the box, something rejuvenating accompanied by a wholesome stay.</p>
-							<p>A journey replete with excitement and exploration is waiting for you! </p>                            
-                            <div class="btn-sec"><a href="javascript:void(0);" id="getMood" class="btn btn-pura">What’s your travel mood?</a></div>	                        
-                        </div>
-                                                   
-                    </div>
-                    <div class="step step1 step12 right pura-moods">
-                        <div class="step-innner"  id="mood">
-                            <h3>What’s your travel mood?</h3>
-                            <p>To travel is to take a journey into yourself and we strongly feel that your travel mood should get some recognition. That’s why, we identified some of the travel moods so that you swiftly book a thrilling experience along with a holiday stay. Pick a travel mood and live like you belong there.</p>
-                            <div class="lnq-container">
-                            <p>Select any one travel mood from below and get started:</p>
-                                <ul></ul>
-                            </div>
-                        </div>
-
-                        <a class="left resNav" href="javascript:void(0);" id="backToHome">Back</a>
-                    </div>
-
-                    <div class="step step2 step21 left pura-program">
-                        <div class="step-innner" id="program">
-                            <h3>Pick an experience for your travel mood: <span id="moodTitleStep2"></span></h3>
-                            <p>We live to discover beauty in nature. Uncover the treasures of nature on a wilderness walk or be captivated by the charming insights of village life. When it comes to wandering and knowing the region, wilderness walk works superbly and visit to a local village is certainly one of the most fascinating options too.</p>
-                            <div class="lnq-container">
-                                <ul></ul>
-							</div>
-							<a href="javascript:void(0)" class="backlnk" id="backToMood"><< change mood</a>
-                         <a class="left resNav" href="javascript:void(0);" id="backToMood1">Back</a>
-                            </div>
-                        </div>
-					
-                    <div class="step step2 step22 right pura-activity">
-                        <div class="step-innner" id="programDetails">
-                            <h3>Discover the unseen</h3>
-							<span class="t t1">Min - <i>1</i> Hrs</span><span class="t t2">Max - <i>1</i> Hrs</span>
-                            <p>Offers a selection of wilderness walk or village experience accompanied by a local guide. These trails/routes have been identified close to the holiday stay (at a short distance). A refreshment pack containing jumbo veg sandwich, cookies, wafers and canned juice will follow. Ideal time to start is 7 am to 10 am, however permissible start time is till 3 pm.</p>
-                            <div class="lnq-container2">
-                                <ul></ul>
-                            </div>
-                        </div>
-                        <a class="left yellowbg resNav" id="prg2" href="javascript:void(0);">Back</a>
-                    </div>
-
-
-                    <div class="step step3 step31 left pura-activity">
-                        <div class="step-innner" id="activityDetails">
-                            <h3>Wilderness Walk</h3>
-                            <p class="des">When it comes to wandering and knowing the region, wilderness walk works superbly. Wilderness walks or nature trails will be accompanied by a local guide. These trails/routes have been identified close to the holiday stay which will take you to the refreshing world of Kumaon. Moreover, a delicious refreshment pack would follow. Fresh breeze, tall trees and a few unseen cute little birds will come together and offer an unforgettable experience. The stays are set within the pristine peripheries of nature, where you can explore, connect and revive.</p>
-                            
-                        </div>
-                         <a href="javascript:void(0)" class="backlnk2 backToAct"><< back to activity</a>
-                         <a class="left yellowbg resNav" id="prg3" href="javascript:void(0);">Back</a>
-                         <a class="right yellowbg resNav" id="seeGall" href="javascript:void(0);">See Gallery</a>
-                    </div>
-
-                    <div class="step step3 step32 right pura-gallery">
-                        <div class="step-innner" id="activityGallery">
-                            <h3>Wilderness Walk</h3>
-                            <div class="lnq-container3 gal2">
-                                <ul>
-                                    
-                                </ul>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                        <a class="left resNav" id="prg4" href="javascript:void(0);">Back</a>
-                    </div>					
-                       
-                    </div>
-
-                    
-
-        </div>
-            
-                      
-    </section>
+    <?php include_once("resort_experience_section.php");?>
     
     <section class="sec package">
     	<div class="container">
@@ -830,36 +743,7 @@ var timeout;
 	        	}
 	        }
 
-            $(".step.step2,.step.step3").hide(); 
-            var totWid = $(window).width();
-            if ( totWid > 768 ) {
-                $(".gotoprogram").on('click', function(){
-                    var currentPrgId = $(this).attr("data-id");
-                    $(".step.step1").fadeOut(0);
-                    $(".step.step2").fadeIn(500);
-                })
-
-                $("#backToMood").on("click", function(){
-                    $(".step.step2").fadeOut(0);
-                    $(".step.step1").fadeIn(500);
-                })
-
-                $(".changeProg").on("click", function(){
-                    var currentPrgId = $(this).attr("data-id");
-                })
-
-                $(".goToDetails").on("click", function(){
-                    var currentActId = $(this).attr("data-id");
-                    $(".step.step2").fadeOut(0);
-                    $(".step.step3").fadeIn(500);
-                })
-
-                $(".backToAct").on("click", function(){
-                    $(".step.step3").fadeOut(0);
-                    $(".step.step2").fadeIn(500);
-                })
-
-            } 
+            
         })
     </script>
     
@@ -910,196 +794,11 @@ var timeout;
             setImageWidth();
         });
     </script>
-    
-    <script type="text/javascript">
-        var loadPackage = function(){
-            $('.overlay').fadeIn(500);
-            var link = 'http://api.purastays.com/packages/id/' + "<?= $id; ?>";
-            $.ajax({
-              url: link,
-              type: "GET",
-              dataType: "json",
-              success: function (data, status, jqXHR) {
-                var packageData;            
-                var currMoodId;
-                var currMoodIndex;
-                var currMoodName;
-                var programData;
-                var currPrgId;
-                var currPrgName;
-                var currPrgIndex;
-                var currPrgDes;
-                var activityData;
-                var activityIndex;
-
-
-                packageData = data.moods;
-                $.each(packageData, function(index, obj) {
-                    var moodHtml = '<a href="javascript:void(0);" class="gotoprogram" data-id="'+obj.Id+'" data-index="'+index+'">'+obj.Title+'</a>';
-                    $('#mood ul').append($('<li></li>').html(moodHtml));
-                });
-                //desktop
-                if($(window).width() > 768){
-                    $('.gotoprogram').on('click',function(){                                        
-                        currMoodId = $(this).attr('data-id');
-                        currMoodName = $(this).text();
-                        currMoodIndex = $(this).attr('data-index');
-                        $('.step.step1').hide();
-                        $('.step.step2').fadeIn(500);
-                        $('#moodTitleStep2').text(currMoodName);
-                        programData = packageData[currMoodIndex].programs;
-                        $('#program ul').empty();
-                        $.each(programData, function(index, obj) {
-                            var programHtml = '<a href="javascript:void(0);" class="changeProg" data-id="'+obj.Id+'" data-index="'+index+'" data-det="'+obj.Program_Details+obj.Program_Time_Min+'">'+obj.Program_Title+'</a>';
-							$('#program ul').append($('<li></li>').html(programHtml));                                                       
-                        });
-                        $("#program p").text(packageData[currMoodIndex].Description);
-                        $('#programDetails h3').text(programData[0].Program_Title);
-                        $('#programDetails p').text(programData[0].Program_Details);  
-                        $('#programDetails span.t.t1 i').text(programData[0].Program_Time_Min);  
-                        $('#programDetails span.t.t2 i').text(programData[0].Program_Time_Max);  
-                        $('#programDetails ul').empty();                      
-                        $.each(programData[0].activities, function(index, obj) {
-                            var programDetHtml = '<a href="javascript:void(0);" class="goToDetails" data-index="'+index+'">'+obj.Activity_Name+'</a>';
-                            $('#programDetails ul').append($('<li></li>').html(programDetHtml));
-                        });
-                        currPrgIndex = 0;
-                    })
-
-                    $(document).on('click', '.changeProg', function(){ 
-                        $('#programDetails ul').empty();                
-                        currPrgId = $(this).attr('data-id');
-                        currPrgName = $(this).text();
-                        currPrgIndex = $(this).attr('data-index');                        
-                        $('#programDetails h3').text(programData[currPrgIndex].Program_Title);
-                        $('#programDetails p').text(programData[currPrgIndex].Program_Details); 
-						 $('#programDetails span.t.t1 i').text(programData[currPrgIndex].Program_Time_Min);  
-                        $('#programDetails span.t.t2 i').text(programData[currPrgIndex].Program_Time_Max);
-                        $.each(programData[currPrgIndex].activities, function(index, obj) {
-                            var programDetHtml = '<a href="javascript:void(0);" class="goToDetails" data-index="'+index+'">'+obj.Activity_Name+'</a>';
-                            $('#programDetails ul').append($('<li></li>').html(programDetHtml));
-
-                        });                        
-                    });
-                    $(document).on('click', '.goToDetails', function(){
-                    	$('#activityGallery ul li').remove();
-                        activityIndex = $(this).attr('data-index');
-                        activityData = programData[currPrgIndex].activities[activityIndex];   
-                        $('.step.step2').hide();
-                        $('.step.step3').fadeIn(500);                        
-                        $('#activityDetails h3').text(activityData.Activity_Name);
-                        $('#activityDetails p.des').text(activityData.About_Activity_Description);
-                        $('#activityDetails p .t.t1 i').text(activityData.Min_Time);
-                        $('#activityDetails p .t.t2 i').text(activityData.Max_Time);
-                        $('#activityGallery h3').text(activityData.Activity_Name);
-                        $.each(activityData.gallery, function(index, obj) {                            
-                            $('#activityGallery ul').append($('<li><a href="'+obj+'" data-lightbox="package"><img src="'+obj+'" alt=""></a></li>'));
-                        });                           
-
-                    });
-
-                }else{ //mobile
-                    $('.step12').hide();
-                    $('#getMood').on('click', function(){                                              
-                        $('.step11').hide();    
-                        $('.step12').fadeIn(500);
-                    })
-
-                    $('.gotoprogram').on('click',function(){
-                    	currMoodIndex = $(this).attr('data-index');
-                        $('.step12').hide();    
-                        $('.step21').fadeIn(500);  
-                        currMoodId = $(this).attr('data-id');
-                        currMoodIndex = $(this).attr('data-index');
-                        programData = packageData[currMoodIndex].programs;
-                         $('#program ul').empty();
-                        $.each(programData, function(index, obj) {
-                            var programHtml = '<a href="javascript:void(0);" class="changeProg" data-id="'+obj.Id+'" data-index="'+index+'" data-det="'+obj.Program_Details+'">'+obj.Program_Title+'</a>';
-                            $('#program ul').append($('<li></li>').html(programHtml));
-                        });
-                        $("#program p").text(packageData[currMoodIndex].Description);
-                    })
-
-					
-					$(document).on('click', '.changeProg', function(){	
-						$(".step21").hide();
-						$(".step22").fadeIn(500);
-						$('#programDetails ul').empty();                
-                        currPrgId = $(this).attr('data-id');
-                        currPrgName = $(this).text();
-                        currPrgIndex = $(this).attr('data-index');                        
-                        $('#programDetails h3').text(programData[currPrgIndex].Program_Title);
-                        $('#programDetails p').text(programData[currPrgIndex].Program_Details); 
-                        $.each(programData[currPrgIndex].activities, function(index, obj) {
-                            var programDetHtml = '<a href="javascript:void(0);" class="goToDetails" data-index="'+index+'">'+obj.Activity_Name+'</a>';
-                            $('#programDetails ul').append($('<li></li>').html(programDetHtml));
-                        });
-					})
-
-					$(document).on('click', '.goToDetails', function(){                    	
-                        activityIndex = $(this).attr('data-index');
-                        activityData = programData[currPrgIndex].activities[activityIndex];                               
-                        $('.step22').hide();
-                        $('.step31').fadeIn(500);                        
-                        $('#activityDetails h3').text(activityData.Activity_Name);
-                        $('#activityDetails p.des').text(activityData.About_Activity_Description);
-                        $('#activityDetails p .t.t1 i').text(activityData.Min_Time);
-                        $('#activityDetails p .t.t2 i').text(activityData.Max_Time);
-                        $('#activityGallery h3').text(activityData.Activity_Name); 
-
-                    });
-
-					$(document).on('click', '#seeGall', function(){
-						$('#activityGallery ul li').remove();
-						$('.step31').hide();
-                        $('.step32').fadeIn(500);   
-						$.each(activityData.gallery, function(index, obj) {                            
-                            $('#activityGallery ul').append($('<li><a href="'+obj+'" data-lightbox="package"><img src="'+obj+'" alt=""></a></li>'));
-                        });  
-					})                    	                    				
-
-                    $('#backToHome').on('click', function(){
-                        $('.step12').hide();    
-                        $('.step11').fadeIn(500);                          
-                    })					
-
-                    $('#backToMood1').on('click', function(){                        
-                        $('.step.step21').hide();
-                        $('.step.step12').fadeIn(500);
-                    })
-
-                    $("#prg2").on('click', function(){
-						$('.step.step22').hide();
-                        $('.step.step21').fadeIn(500);
-					})
-
-					$("#prg3").on('click', function(){
-						$('.step.step31').hide();
-                        $('.step.step22').fadeIn(500);
-					})
-
-					$("#prg4").on('click', function(){
-						$('.step.step32').hide();
-                        $('.step.step31').fadeIn(500);
-					})
-                }   
-              },
-              error: function (jqXHR, status, err) {
-                console.log(err);
-              },
-              complete: function (jqXHR, status) {
-                $('.overlay').fadeOut(500);
-              }
-            })
-
-        }
-    </script>
-    
     <script type="text/javascript" src="../libs/jquery.bxslider.min.js"></script>
     <script src="../resorts/resort.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9OLokmn9nhBuHYjk_v21oFNuF7tYys9Q&callback=initMap"></script>
     <?php
-        include("../includes/bodyexit.php");
+        //include("../includes/bodyexit.php");
     ?>
   </body>
 </html>
