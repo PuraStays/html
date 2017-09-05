@@ -1,6 +1,6 @@
 <script src="<?= STATIC_ROOT ?>/js/purastays_experience_module.js"></script>
 <?php 
-	if(ENV == 'dev') {
+	if(ENV == 'prod') {
 		echo '<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9OLokmn9nhBuHYjk_v21oFNuF7tYys9Q&callback=pura_experience.initMap"></script>';
 	}	
 ?>
