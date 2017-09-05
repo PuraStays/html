@@ -67,50 +67,7 @@
     </script>
 
 	
-    <script>
-      var myLatLng = {lat: <?= $row['Lat']; ?>, lng: <?= $row['Lng']; ?>};
-      console.log(JSON.parse(localStorage.getItem(location)));
-      function initMap() {
-          
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 10,
-          draggable: false,
-          scrollwheel: false,
-	      disableDoubleClickZoom: true,
-	      panControl: false,
-	      streetViewControl: false,
-          center: myLatLng
-        });
-
-        var marker = new google.maps.Marker({
-          position: myLatLng,
-          map: map,
-          title: 'Pura',
-          icon: '../images/map-marker.png'
-        });   
-      }  
-      $(document).ready(function () {       
-        $('.maplink').on('click', function(){    
-            $('#mapModal').modal({
-                show: 'true'
-            });        
-            var modalBodyHt = $(window).outerHeight() - 55;
-            $('#mapModal .modal-body').height(modalBodyHt);
-            
-            var map2 = new google.maps.Map(document.getElementById('map2'), {
-                zoom: 10,
-                center: myLatLng
-            });
-
-                var marker = new google.maps.Marker({
-                    position: myLatLng,
-                    map: map2,
-                    title: 'Pura',
-                    icon: '../images/map-marker.png'
-    	        });
-            })
-        })      
-    </script>
+    
     <?php include_once("../includes/taghead.php") ?>
   </head>
   <body>
@@ -597,7 +554,7 @@
                         $qry_test = "select * from testimonials where resort_id = $id && Description ='' && Status = 1";
                         $result_test = $db->_query($qry_test);
                         $count = 0;
-                        $test_arr = [];
+                        $test_arr = [];                        
                     ?>
 
                     <?php
@@ -608,7 +565,8 @@
                                 ?>
                                     <div class="col-sm-6">
                                     <?php
-                                    foreach ($test_arr as $key => $value) {
+                                    echo $test_arr;
+                                    foreach ($test_arr as $key => $value) {     
                                         if($key%2==0)
                                         {
                                         ?>
@@ -728,24 +686,9 @@ var timeout;
 
 
     <?php include_once("../includes/footer.php");?>
-    <?php include_once("../includes/map_modal.php");?>  <?php include_once("includes/map_modal.php");?>
-    <script type="text/javascript">
-        $(document).ready(function(){
-        	//removing class from gallery for responsive
-        	if($(document).width<=480){
-	        	$('.resImgGal').find('.txtBlk a').removeAttr('data-lightbox');
-	        }else{
-	        	var attr = $(this).attr('name');
-	        	if (typeof attr !== typeof undefined && attr !== false) {
-
-	        	}else{
-	        		$('.resImgGal').find('.txtBlk a').attr("data-lightbox","gall2");
-	        	}
-	        }
-
-            
-        })
-    </script>
+    <?php include_once("../includes/map_modal.php");?>  
+    <?php include_once("includes/map_modal.php");?>
+    
     
     <script type="text/javascript" src="../bower_components/lightbox2/dist/js/lightbox.min.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -758,7 +701,19 @@ var timeout;
             lightbox.option({
               'resizeDuration': 100,
               'wrapAround': true
-            }) 
+            })
+
+            //removing class from gallery for responsive
+            if($(document).width<=480){
+                $('.resImgGal').find('.txtBlk a').removeAttr('data-lightbox');
+            }else{
+                var attr = $(this).attr('name');
+                if (typeof attr !== typeof undefined && attr !== false) {
+
+                }else{
+                    $('.resImgGal').find('.txtBlk a').attr("data-lightbox","gall2");
+                }
+            }
         }); 
         
 
@@ -796,7 +751,7 @@ var timeout;
     </script>
     <script type="text/javascript" src="../libs/jquery.bxslider.min.js"></script>
     <script src="../resorts/resort.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9OLokmn9nhBuHYjk_v21oFNuF7tYys9Q&callback=initMap"></script>
+    
     <?php
         include("../includes/bodyexit.php");
     ?>

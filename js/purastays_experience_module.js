@@ -1,6 +1,8 @@
 'use strict;'
 
 var pura_experience = (function() {
+
+	//experience section
 	var resort_id = localStorage.getItem('id') || 21;
 	function getData() {
 		var apilink = 'http://admin.purastays.com:3000/api/experience/' + resort_id;
@@ -127,6 +129,7 @@ var pura_experience = (function() {
 	function init() {
 		getData();
 		manageBreakPoint();
+		initMap();
 	}
 
 	$('.step31 .backlnk2.desktop').on('click', function() {
@@ -178,9 +181,41 @@ var pura_experience = (function() {
     	$('.experience-sec').find('.step32').css({"display": "none"});
 	})
 
+
+	function initMap() {
+        //map init
+		var myLatLng = JSON.parse(localStorage.getItem('location'));
+
+		var mapOptions = {
+			zoom: 10,
+			draggable: false,
+			scrollwheel: false,
+			disableDoubleClickZoom: false,
+			panControl: false,
+			streetViewControl: false,
+			center: myLatLng
+	    }
+
+	    var markerOption = {
+			position: myLatLng,
+			map: map,
+			title: 'Pura',
+			icon: '../images/map-marker.png'
+	    }
+
+		var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+	    var map2 = new google.maps.Map(document.getElementById('map2'), mapOptions);
+
+	    var marker = new google.maps.Marker(markerOption);
+
+	    var marker2 = new google.maps.Marker(markerOption
+    }  
+
 	return {
 		init: init,
-		manageBreakPoint: manageBreakPoint
+		manageBreakPoint: manageBreakPoint,
+		initMap: initMap
 	}
 })();
 
@@ -191,4 +226,25 @@ var pura_experience = (function() {
 	$(window).resize(function() {
 		pura_experience.manageBreakPoint();
 	})
+
+	//draw map resort page
+	$('.maplink').on('click', function(){    
+        $('#mapModal').modal({
+            show: 'true'
+        });        
+        var modalBodyHt = $(window).outerHeight() - 55;
+        $('#mapModal .modal-body').height(modalBodyHt);
+        
+        var map2 = new google.maps.Map(document.getElementById('map2'), {
+            zoom: 10,
+            center: myLatLng
+        });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map2,
+                title: 'Pura',
+                icon: '../images/map-marker.png'
+	        });
+        })
 })();

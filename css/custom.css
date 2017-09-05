@@ -719,6 +719,7 @@ footer .copyright{text-align:center;padding-top:40px;color:#D0D0D0;font-size:13p
 #BEx4IDaY3bWD select.BEx4ZXaY3bPC, #BEx4IDaY3bWD select.BEx4ZXaY3bPP {
     background: #ffffff !important; 
 }
+.modal-body#map2 {min-height: 350px;}
 
 @media only screen and (max-width:1366px){.container{width:1024px;}
 .pura-banner-inner .pura-slider img{width:100%}
@@ -962,7 +963,6 @@ p{font-size:14px;}
 .galleryNew .imgCntnr{height:260px;}
 .pura-banner-inner .pura-slider img{width:auto;}
 .icon-container ul li{display:inline-block;margin-left:5px;margin-right:5px;}
-.sec-resort{margin-bottom:180px;}
 .abt-inner h3,.abt-inner h2{font-size:20px;}
 }
 @media only screen and (max-width:480px){
