@@ -209,7 +209,7 @@ var pura_experience = (function() {
 
 	    var marker = new google.maps.Marker(markerOption);
 
-	    var marker2 = new google.maps.Marker(markerOption
+	    var marker2 = new google.maps.Marker(markerOption);
     }  
 
 	return {
