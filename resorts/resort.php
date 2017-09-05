@@ -798,7 +798,7 @@ var timeout;
     <script src="../resorts/resort.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9OLokmn9nhBuHYjk_v21oFNuF7tYys9Q&callback=initMap"></script>
     <?php
-        //include("../includes/bodyexit.php");
+        include("../includes/bodyexit.php");
     ?>
   </body>
 </html>
