@@ -900,7 +900,7 @@ p{font-size:14px;}
 .package-container .package-inner .step.step22, .package-container .package-inner .step.step31, .package-container .package-inner .step.step32{display: none}
 .package-container .step.left .step-innner{padding-left:0;}
 .package-container .step.right .step-innner{padding-right:0;}
-.package-container .package-inner .step .step-innner{text-align:center;}
+.package-container .package-inner .step .step-innner{text-align:center; margin-bottom: 60px;}
 .resNav{display:block;}
 .slider-left .left-sec{float:none;}
 .slider-left .right-sec{float:none;}
