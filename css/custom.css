@@ -264,7 +264,7 @@ footer .copyright{text-align:center;padding-top:40px;color:#D0D0D0;font-size:13p
 .ideal .map div.maplink{position: absolute; top: 0; left: 0; z-index: 200; cursor: pointer; height: 100%; width: 100%;}
 .ideal .map #map{width:100%;height:96%;}
 #map2{width: 100%; height: 100%;}
-.map2 .close{width: 36px; height: 36px; background: url(images/close.png) #fff no-repeat center center; position: absolute; right: 0px; top: 0px; cursor: pointer; z-index: 9999; margin: 5px; display: block;opacity: 1; padding: 20px;}
+.map2 .close{width: 36px; height: 36px; background: url(images/close.png) #fff no-repeat center center; position: absolute; right: 10px; top: 10px; cursor: pointer; z-index: 9999; margin: 5px; display: block;opacity: 1; padding: 20px;}
 .ideal table{margin-top:10px;width:100%;font-size:14px;}
 .ideal table .a{font-weight:bold;text-align:left}
 .ideal table .b{text-align:left}
@@ -719,7 +719,6 @@ footer .copyright{text-align:center;padding-top:40px;color:#D0D0D0;font-size:13p
 #BEx4IDaY3bWD select.BEx4ZXaY3bPC, #BEx4IDaY3bWD select.BEx4ZXaY3bPP {
     background: #ffffff !important; 
 }
-.modal-body#map2 {min-height: 350px;}
 
 @media only screen and (max-width:1366px){.container{width:1024px;}
 .pura-banner-inner .pura-slider img{width:100%}

@@ -182,7 +182,7 @@ var pura_experience = (function() {
 	})
 
 
-	function initMap() {
+	function initMap(elem) {
         //map init
 		var myLatLng = JSON.parse(localStorage.getItem('location'));
 
@@ -193,6 +193,18 @@ var pura_experience = (function() {
 			disableDoubleClickZoom: false,
 			panControl: false,
 			streetViewControl: false,
+			disableDefaultUI: true,
+			center: myLatLng
+	    }
+
+	    var mapOptionsOthers = {
+			zoom: 10,
+			draggable: false,
+			scrollwheel: false,
+			disableDoubleClickZoom: false,
+			panControl: false,
+			streetViewControl: false,
+			disableDefaultUI: false,
 			center: myLatLng
 	    }
 
@@ -202,14 +214,20 @@ var pura_experience = (function() {
 			title: 'Pura',
 			icon: '../images/map-marker.png'
 	    }
+	    var markerOption2 = {
+			position: myLatLng,
+			map: map,
+			title: 'Pura',
+			icon: '../images/map-marker.png'
+	    }
 
-		var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-
-	    var map2 = new google.maps.Map(document.getElementById('map2'), mapOptions);
-
-	    var marker = new google.maps.Marker(markerOption);
-
-	    var marker2 = new google.maps.Marker(markerOption);
+	    if(elem) {
+	    	var map2 = new google.maps.Map(document.getElementById(elem), mapOptionsOthers);	
+	    	var marker2 = new google.maps.Marker(markerOption2);
+	    } else {
+	    	var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+			var marker = new google.maps.Marker(markerOption);
+	    }
     }  
 
 	return {
@@ -227,24 +245,17 @@ var pura_experience = (function() {
 		pura_experience.manageBreakPoint();
 	})
 
-	//draw map resort page
-	$('.maplink').on('click', function(){    
-        $('#mapModal').modal({
-            show: 'true'
-        });        
-        var modalBodyHt = $(window).outerHeight() - 55;
-        $('#mapModal .modal-body').height(modalBodyHt);
-        
-        var map2 = new google.maps.Map(document.getElementById('map2'), {
-            zoom: 10,
-            center: myLatLng
-        });
+	//resort page modal dialog
+	$('#maplink').on('click', function(){
+		var elem = 'map2';
+        $('#mapModal').modal({show: 'true'});
+        console.log($('#'+elem));
+        pura_experience.initMap(elem);
+        if($(window).width() >= 768) {
+        	$('#'+elem).height(($(window).height())/2);
+        } else {
+        	$('#'+elem).height(2*($(window).height())/3);
+        }
+    })
 
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map2,
-                title: 'Pura',
-                icon: '../images/map-marker.png'
-	        });
-        })
 })();

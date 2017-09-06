@@ -252,7 +252,7 @@
                                             </tr>
                                         </table>
 
-                                        <div class="map" data-toggle="modal" data-target="#mapModal"><div id="map"></div></div>
+                                        <div class="map" id="maplink"><div id="map"></div></div>
                                         
                                     </div>
                                 </div>
@@ -565,7 +565,6 @@
                                 ?>
                                     <div class="col-sm-6">
                                     <?php
-                                    echo $test_arr;
                                     foreach ($test_arr as $key => $value) {     
                                         if($key%2==0)
                                         {
