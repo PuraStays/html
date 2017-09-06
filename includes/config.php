@@ -3,9 +3,9 @@
 	 * Configuration file based on different enviornment
 	 * dev -> development, prod -> production, test -> test
 	 */	
-	define( 'ENV', 'dev'); //dev -> development, prod -> production, test -> test
+	define( 'ENV', 'prod'); //dev -> development, prod -> production, test -> test
 
-	if ( ENV == 'prod' ) {
+	if ( ENV == 'dev' ) {
 		define( 'STATIC_ROOT', 'http://localhost/purastays/pura_web' );
 		define( 'PURA_HOST', '127.0.0.1' );
 		define( 'PURA_USER', 'root');
