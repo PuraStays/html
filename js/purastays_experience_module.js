@@ -249,7 +249,6 @@ var pura_experience = (function() {
 	$('#maplink').on('click', function(){
 		var elem = 'map2';
         $('#mapModal').modal({show: 'true'});
-        console.log($('#'+elem));
         pura_experience.initMap(elem);
         if($(window).width() >= 768) {
         	$('#'+elem).height(($(window).height())/2);
