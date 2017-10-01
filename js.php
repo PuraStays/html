@@ -114,7 +114,7 @@
         $( ".galleryNew ul li" ).each(function( index ) {
             var _this = this;             
             $(this).find('.imgCntnr figure img').attr({'src': data[index].img, 'alt': data[index].heading});
-            $(this).find('.hoverImg .txtBlk a.linkIcon').attr('href', data[index].link);
+            $(this).find('.hoverImg').attr('href', data[index].link);
             $(this).find('.hoverImg .txtBlk h2').text(data[index].heading);
             $(this).find('.hoverImg .txtBlk p').text(data[index].desc);                    
         });
