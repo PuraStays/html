@@ -501,9 +501,9 @@
                             ?>
                             
                             
-                            <div class="btn-sec text-center">
+                            <!--div class="btn-sec text-center">
                                 <a href="http://purastays.com/booking/" class="btn btn-pura">Book Now</a>
-                            </div>
+                            </div-->
                             <?php
                                 }
                             ?>
