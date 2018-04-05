@@ -720,9 +720,16 @@ footer .copyright{text-align:center;padding-top:40px;color:#D0D0D0;font-size:13p
     background: #ffffff !important; 
 }
 
-@media only screen and (max-width:1366px){.container{width:1024px;}
-.pura-banner-inner .pura-slider img{width:100%}
-.pura-slider{height:504px;}
+@media only screen and (max-width:2500px) {
+	.container {
+		width:1024px;
+	}
+	.pura-banner-inner .pura-slider img {
+		width:100%
+	}
+	.pura-slider{
+		height:504px;
+	}
 }
 @media only screen and (max-width:1024px){.container{width:940px;}
 .pura-slider{height:426px;}
