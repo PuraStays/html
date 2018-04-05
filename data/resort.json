@@ -1,37 +1,37 @@
 [
     {
-        "resort_id": "27",
-        "resort_name": "The Camphor Tree",
-        "resort_booking_link": "https://www.secure-booking-engine.com/accounts/YYcDka7DAsWh4JBPKmq5Pg/properties/QwUaomy71JhO7Zq49KgY6g/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/"
+        "resort_id": "31",
+        "resort_name": "Two Chimneys - Pura Stays, Near Nainital",
+        "resort_booking_link": "https://www.secure-booking-engine.com/accounts/YYcDka7DAsWh4JBPKmq5Pg/properties/3p0xJnujV2ISur4g4PF0-g/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/"
     },
     {
         "resort_id": "30",
-        "resort_name": "Clifton",
+        "resort_name": "Clifton - Pura Stays, Nainital",
         "resort_booking_link": "https://www.secure-booking-engine.com/accounts/YYcDka7DAsWh4JBPKmq5Pg/properties/W_uqHT4BZJ4A_3EEHs5Gfg/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/"
     },
     {
         "resort_id": "28",
-        "resort_name": "Deja Vu",
+        "resort_name": "Deja Vu - Pura Stays, Naukuchiatal",
         "resort_booking_link": "https://www.secure-booking-engine.com/accounts/YYcDka7DAsWh4JBPKmq5Pg/properties/-WQLOKTiGmezef47-iBLNA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/"
     },
     {
-        "resort_id": "21",
-        "resort_name": "Frozen Woods",
-        "resort_booking_link": "https://www.secure-booking-engine.com/accounts/YYcDka7DAsWh4JBPKmq5Pg/properties/oFeBGj3I3uXUusOJFoWKUg/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/"
+        "resort_id": "27",
+        "resort_name": "The Camphor Tree - Pura Stays, Naukuchiatal",
+        "resort_booking_link": "https://www.secure-booking-engine.com/accounts/YYcDka7DAsWh4JBPKmq5Pg/properties/QwUaomy71JhO7Zq49KgY6g/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/"
     },
     {
         "resort_id": "26",
-        "resort_name": "One Partridge HIll",
+        "resort_name": "One Partridge Hill - Pura Stays, Near Mukteshwar",
         "resort_booking_link": "https://www.secure-booking-engine.com/accounts/YYcDka7DAsWh4JBPKmq5Pg/properties/GeL-zJCSev5jpMthurM7mA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/"
     },
     {
         "resort_id": "24",
-        "resort_name": "The Hammock",
+        "resort_name": "The Hammock Bhimtal - Pura Stays",
         "resort_booking_link": "https://www.secure-booking-engine.com/accounts/YYcDka7DAsWh4JBPKmq5Pg/properties/BGUJSVnG_7LyhZbou6Se3w/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/"
-    },
+    },  
     {
-        "resort_id": "31",
-        "resort_name": "Two Chimneys",
-        "resort_booking_link": "https://www.secure-booking-engine.com/accounts/YYcDka7DAsWh4JBPKmq5Pg/properties/3p0xJnujV2ISur4g4PF0-g/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/"
-    }   
+        "resort_id": "21",
+        "resort_name": "Frozen Woods - Pura Stays, Near Mukteshwar",
+        "resort_booking_link": "https://www.secure-booking-engine.com/accounts/YYcDka7DAsWh4JBPKmq5Pg/properties/oFeBGj3I3uXUusOJFoWKUg/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/"
+    }     
 ]
