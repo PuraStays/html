@@ -4,11 +4,7 @@ ini_set('display_errors', '0');
 session_start();
 class DB
      {   
-/*			 var $host="localhost"; 
-			 var $user="root";
-			 var $pwd="";
-			 var $database="groz-app";
-*/
+
  			 var $host=PURA_HOST; 
 			 var $user=PURA_USER;
 			 var $pwd=PURA_PASSWORD;

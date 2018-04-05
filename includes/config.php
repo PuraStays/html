@@ -6,7 +6,7 @@
 	define( 'ENV', 'prod'); //dev -> development, prod -> production, test -> test
 
 	if ( ENV == 'dev' ) {
-		define( 'STATIC_ROOT', 'http://localhost/purastays/pura_web' );
+		define( 'STATIC_ROOT', 'http://puralocal' );
 		define( 'PURA_HOST', '127.0.0.1' );
 		define( 'PURA_USER', 'root');
 		define( 'PURA_PASSWORD', 'root');

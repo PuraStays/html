@@ -25,7 +25,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="http://www.purastays.com/" class="navbar-brand"><img src="http://www.purastays.com/images/logo.png" alt="Pura Stays"></a>
+            <a href="<?php echo STATIC_ROOT ?>" class="navbar-brand"><img src="http://www.purastays.com/images/logo.png" alt="Pura Stays"></a>
         </div>
         <!-- Collection of nav links, forms, and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse slideMenu"> 
@@ -34,7 +34,7 @@
           <div class="navbar-container">              
             <ul class="nav navbar-nav">
                 <li class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#" onclick="return false;">Holiday Stays<b class="caret"></b></a>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="javascript:void(0);" onclick="return false;">Holiday Stays<b class="caret"></b></a>
                     <div role="menu" class="dropdown-menu"> 
                         <div class="dropdown-inner">   
                             <ul>
@@ -44,7 +44,8 @@
                                         {
                                             $url = 'http://www.purastays.com/resorts/resort.php?id='.$row_nev['Id'];
                                             $url = $arr_url[$url];
-                                            ?>
+                                            $url = str_replace("http://www.purastays.com", STATIC_ROOT, $url);
+                                            ?>                                             
                                                 <li><a href="<?= $url; ?>"><i class="fa custom-home"></i><?= $row_nev['Resort_Name'];?></a></li>
                                                 <li class="divider"></li>
                                             <?php        

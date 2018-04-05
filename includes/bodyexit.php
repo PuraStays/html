@@ -21,9 +21,9 @@
         }
 
         if (!!resource) {
-            //resource page
-            $('a.book_a_stay').on('click', function() {
-                $('body').animate({scrollTop:formTopPosition}, 1000);
+            //resource page            
+            $('a.book_a_stay').bind('click', function() {                
+                $('html,body').animate({scrollTop:formTopPosition}, 1000);
             })
 
             $.getJSON("/data/resort.json", function(json) {
