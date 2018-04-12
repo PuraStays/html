@@ -50,7 +50,7 @@
                 </ul>
             </li>
             <li><a href="http://www.purastays.com/pura-stays-insight">Insight</a></li>                        
-            <li><a href="http://www.purastays.com/blog/" target="_blank">Blog</a></li>
+            <!--li><a href="http://www.purastays.com/blog/" target="_blank">Blog</a></li-->
             <?php
 
                 
