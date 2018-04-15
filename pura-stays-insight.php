@@ -575,7 +575,7 @@
     <script type="text/javascript" src="libs/jquery.validate.min.js"></script>
 
     <script src="js/common.js"></script>    
-	<link href="css/elements.css" rel="stylesheet">\
+	<link href="css/elements.css" rel="stylesheet">
 	
     <script>
         var resource;

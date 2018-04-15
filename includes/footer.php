@@ -46,7 +46,7 @@
                     <h4>Info</h4>  
                     <ul>
                         <li><a href="http://www.purastays.com/about-pura-stays">About Pura Stays</a></li>
-                        <li><a href="http://blog.purastays.com" target="_blank">Blog</a></li>
+                        <li><a href="http://www.purastays.com/blog" target="_blank">Blog</a></li>
                         <li><a href="http://www.purastays.com/travel-tips">Travel Tips</a></li>
                         <li><a href="http://www.purastays.com/help-faqs">Help/FAQs</a></li>
                         <li><a href="http://www.purastays.com/pura-stays-rollout">Pura Stays Rollout</a></li>
