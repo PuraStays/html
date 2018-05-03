@@ -237,7 +237,7 @@
                             setTimeout(function() {
                                 $('#reqCallBack').modal('hide');
                                 reset();
-                            },1500)                        
+                            },800)                        
                         }                        
                       }
                     });
