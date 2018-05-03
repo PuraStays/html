@@ -71,6 +71,7 @@ body{scrollbar-base-color:#C0C0C0;scrollbar-base-color:#C0C0C0;scrollbar-3dlight
 .navbar-pura2 .nav>li>a{padding: 8px 15px; color: #fff; transition: all 0.5s}
 .navbar-pura2 .nav>li>a:hover,.navbar-pura2 .nav>li>a:active,.navbar-pura2 .nav>li>a:focus{background: transparent;}
 .navbar-pura2 .nav>li>a.book{border: 1px solid #fff;}
+.navbar-pura2 .nav>li>a.book.request_a_callback {border: none; margin-right: 10px;} 
 .navbar-pura2 .navbar-brand{z-index: 5; position: relative;}
 .navbar-pura2 .dropdown-menu .dropdown-inner{padding: 10px;}
 .collapse.navbar-collapse.slideMenu{position: relative;}
@@ -570,10 +571,62 @@ footer .copyright{text-align:center;padding-top:40px;color:#D0D0D0;font-size:13p
 .call_number_container .num01 a{padding:8px 20px;font-size:20px;color:#ffffff;white-space:nowrap;font-family:sans-serif;display:inline-block;}
 .call_number_container .num01 a:hover{text-decoration:none;}
 .call_number_container .call:hover i{animation:shake 0.82s cubic-bezier(.36,.07,.19,.97) both;transform:translate3d(0, 0, 0);backface-visibility:hidden;perspective:1000px;}
-@keyframes shake{10%, 90%{transform:translate3d(-1px, 0, 0);}
-20%, 80%{transform:translate3d(2px, 0, 0);}
-30%, 50%, 70%{transform:translate3d(-4px, 0, 0);}
-40%, 60%{transform:translate3d(4px, 0, 0);}
+
+.request-a-callback-dialog .modal-body {
+	padding: 0;
+}
+
+.request-a-callback-dialog .modal-dialog .close {
+	font-size: 55px;
+	transition: all 0.5s;
+	position: relative;
+	top: -20px;
+}
+.request-a-callback-dialog .modal-dialog .request-callback-content {
+	display: flex;
+}
+.request-a-callback-dialog .modal-dialog .request-callback-content .callback-img-container {
+	width: 40%;
+	overflow: hidden;
+}
+.request-a-callback-dialog .modal-dialog .request-callback-content .callback-img-container img {
+	width: 100%;
+}
+.request-a-callback-dialog .modal-dialog .request-callback-content .callback-content-container {
+	flex: 1;
+	padding: 20px;
+}
+.request-a-callback-dialog .modal-dialog .request-callback-content .callback-content-container form{
+	padding: 20px 0;
+}
+.request-a-callback-dialog .modal-dialog .request-callback-content .status-message {
+	font-weight: bold;
+	font-size: 15px !important;
+}
+.request-a-callback-dialog .modal-dialog .request-callback-content .status-message.success {
+	color: green;
+}
+.request-a-callback-dialog .modal-dialog .request-callback-content .status-message.error {
+	color: red;
+}
+
+@media only screen and (max-width: 991px) {
+	.request-a-callback-dialog .modal-dialog .request-callback-content .callback-img-container img {
+		width: 150% !important;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.request-a-callback-dialog .modal-dialog .request-callback-content .callback-img-container {
+		display: none;
+	}	
+}
+
+@keyframes shake{
+	10%, 90%{transform:translate3d(-1px, 0, 0);}
+	20%, 80%{transform:translate3d(2px, 0, 0);}
+	30%, 50%, 70%{transform:translate3d(-4px, 0, 0);}
+	40%, 60%{transform:translate3d(4px, 0, 0);}
 }
 
 .floating-booking-form{
@@ -935,6 +988,12 @@ p{font-size:14px;}
 .package-container .step .step-innner{min-height:250px;}
 .package-container .step .step-innner p{line-height:18px;}
 .quick-weekend{ margin-top: 30px; padding-bottom: 30px;}
+
+.navbar-pura2 .nav>li>a.book.request_a_callback {
+	margin-bottom: 40px;
+	text-align: left;
+	padding-left: 0;
+} 
 }
 @media only screen and (max-width:640px){.container{width:480px;}
 .pura-banner video{width:120%;}
