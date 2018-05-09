@@ -27,12 +27,12 @@
                 <div class="callback-content-container">
                     <a class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
                     <h3>Request a callback</h3>
-                    <h5>Fill the form below, we will revert you within 24 hours.</h5>
+                    <h5>Please fill in the details below, we shall connect with you shortly.</h5>
                     <div class="status-message"></div>
                     <form>
                         <div class="form-group">
                             <label for="name">Your Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Please enter youe name here" name="name">
+                            <input type="text" class="form-control" id="name" placeholder="Please enter your name here" name="name">
                             
                         </div>
 
@@ -44,7 +44,7 @@
 
                         <div class="form-group">
                             <label for="mobile">Mobile Number</label>
-                            <input type="text" class="form-control" id="mobile" placeholder="Please enter your 10 digit mobile number" name="mobile">
+                            <input type="text" class="form-control" id="mobile" placeholder="Please enter your mobile number" name="mobile">
                             
                         </div>
                         <input type="submit" class="btn btn-pura" value="send">
