@@ -179,7 +179,7 @@
             })
         }
 
-        $('#req_callback').on('click', function() {
+        $('.req_callback').on('click', function() {
             $('#reqCallBack').modal({
                 show: 'false'
             });

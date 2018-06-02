@@ -75,7 +75,7 @@
                 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="javascript:void(0);" class="book request_a_callback" id="req_callback" data-from="menu">Request a Callback</a></li>
+                <li class="active"><a href="javascript:void(0);" class="book request_a_callback req_callback" data-from="menu">Request a Callback</a></li>
                 <li class="active"><a href="javascript:void(0);" class="book book_a_stay" data-from="menu">Book a Stay</a></li>
             </ul>
          </div>       

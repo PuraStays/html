@@ -892,8 +892,8 @@ nav.navbar-pura2 .navbar-nav.navbar-right > li{border-color: transparent;}
 footer{padding:10px 0 60px;}
 .footer-tools{display: block; position: fixed; bottom: 0; width: 100%; z-index: 50; transition: all 0.5s; box-shadow: 0 -10px 20px rgba(0,0,0,0.2);}
 .footer-tools .footer-tools-inner{display: table; width: 100%}
-.footer-tools .footer-tools-inner a{display: table-cell;width: 50%; height: 50px; vertical-align: middle;text-align: center; background: #eaa62d; color: #fff; font-weight: bold; border: 1px solid #986d0f; text-decoration: none;}
-/*.footer-tools .footer-tools-inner a{display: table-cell;width: 50%; height: 50px; vertical-align: middle;text-align: center; background: #fff; color: #eaa62d; font-weight: bold; border: 1px solid #eaa62d; text-decoration: none;}*/
+/*.footer-tools .footer-tools-inner a{display: table-cell;width: 50%; height: 50px; vertical-align: middle;text-align: center; background: #fff; color: #2e3b3f; font-weight: bold; border: 1px solid #986d0f; text-decoration: none;}*/
+.footer-tools .footer-tools-inner a{display: table-cell;width: 50%; height: 50px; vertical-align: middle;text-align: center; background: #fff; color: #eaa62d; font-weight: bold; border: 1px solid #986d0f; text-decoration: none;}
 .footer-tools .footer-tools-inner a{border-left: transparent;}
 .footer-tools .footer-tools-inner a:first-child{border: 1px solid #986d0f;}
 .footer-tools.navdown{bottom: -50px;}
