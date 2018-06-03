@@ -161,8 +161,8 @@
     </footer>
     <div class="footer-tools">
         <div class="footer-tools-inner">
-            <a href="tel:+919015511551">Call Now</a>
-            <!--<a href="javascript:void(0);" class="book_a_stay" data-from="footer">Book a Stay</a>-->
+            <!--<a href="tel:+919015511551">Call Now</a>-->
             <a href="javascript:void(0);" class="req_callback" data-from="footer">Request a Callback</a>
+            <a href="javascript:void(0);" class="book_a_stay" data-from="footer">Book a Stay</a>
         </div>
     </div>
