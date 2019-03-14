@@ -98,6 +98,7 @@
             })
 
             $.getJSON("/data/resort.json", function(json) {
+		window.resource.resortList = json;
                 $(window).scroll(function() {
                     var scroll = $(window).scrollTop() + menuHeight;
                     if(scroll < formTopPosition) {

@@ -109,4 +109,33 @@ $(document).ready(function(){
     	}        
     })
     //stay section scroll end
+
+    // widget handler to update selection after pageloada
+    function getResort(resortId, resorts) {
+ 	 var obj = resorts.find(function (obj) {
+    		return obj.resort_id == resortId; 
+    	});
+   	return obj;
+    }
+
+    function updateWidget(id) {
+	var obj = getResort(id, window.resource.resortList);
+	$('#BEx4IDaY3bPC').val(obj.widget_loc).trigger('click');
+	$('#BEx4IDaY3bPC option').trigger()
+        $('#BEx4IDaY3bPP option').each(function(){
+           if($(this).attr('id') == obj.widget_prop_id){
+              $(this).attr('selected',true);
+           }
+    	});
+    }
+
+    var checkExist = setInterval(function() {
+      if ($('#BEx4IDaY3bPC').length && window.resource.resortList) {
+         //updateWidget(resource.id)
+         clearInterval(checkExist);
+      }
+   }, 500);    
+
+
+
 })

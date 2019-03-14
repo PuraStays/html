@@ -58,7 +58,7 @@
     	<section class="pura-banner-inner">
         	<div class="top-shadow"></div>
         	
-            <?php  include_once("../includes/nav.php");?>
+            <?php  include_once("../includes/nav2.php");?>
             
 
             <div class="bann-txt-container inner">

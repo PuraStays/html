@@ -1,7 +1,34 @@
 $(document).ready(function() {
 
 	//floating window djubo integration fake
-	$('#BEx4IDaY3bWR')
+
+	$.getJSON('/data/resort.json', function(data) {
+		console.log( "success", data );
+	  })
+	.done(function() {
+		console.log( "second success" );
+	})
+	.error(function(jqXHR, textStatus, errorThrown) {
+        console.log("error " + textStatus);
+        console.log("incoming Text " + jqXHR.responseText);
+    })
+	.always(function() {
+		console.log( "complete" );
+	});
+	  
+	setTimeout(function() {
+		$.getJSON("/data/resort.json?asf", function(json) {
+			if (window.localStorage.page === 'resort') {
+				var pageId = window.localStorage.id;
+				var propArr = json.filter(obj => {
+					return obj.resort_id == pageId;
+				})
+				if(propArr.length>0) {
+					$('#BEx4IDaY3bPP').prop("selectedIndex", propArr[0].widget_prop_id);
+				}
+			}
+		})	
+	}, 2000);
 
 	//tooltip init
 	$('[data-toggle="tooltip"]').tooltip();

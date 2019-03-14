@@ -83,7 +83,7 @@ body{scrollbar-base-color:#C0C0C0;scrollbar-base-color:#C0C0C0;scrollbar-3dlight
 .navbar-pura2 .dropdown-menu .divider{margin:0}
 .navbar-pura2 .dropdown-menu ul::before{content:" ";position:absolute;left:40px;top:-9px;width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-bottom:10px solid white;}
 .navbar-pura2 .nav .open>a, .navbar-pura2 .nav .open>a:focus,.navbar-pura2 .nav .open>a:hover {background: transparent}
-.navbar-pura2 .navbar-nav>li>.dropdown-menu .dropdown-inner{max-height:277px; min-width: 380px; max-width: 380px; overflow-y: auto; overflow-x: hidden;}
+.navbar-pura2 .navbar-nav>li>.dropdown-menu .dropdown-inner{min-width: 380px; max-width: 380px; overflow-y: auto; overflow-x: hidden;}
 .shrink{position:fixed;background:#2D3B3F;z-index:107;transition:all 0.5s; height: 60px;box-shadow: 0 5px 20px rgba(0,0,0,0.5);}
 .shrink .navbar-brand{height: 40px;}
 .shrink.navbar-pura2 .nav{margin-top: 4px;}

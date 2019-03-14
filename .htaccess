@@ -34,6 +34,8 @@ RewriteRule ^around-nainital/two-chimneys-pura-stays-near-nainital?$ resorts/res
 RewriteRule ^around-nainital/the-vergomont-pura-stays-near-nainital?$ resorts/resort.php?id=32 [L,NC]
 RewriteRule ^around-nainital/banlekhi-pura-stays-near-mukteshwar?$ resorts/resort.php?id=33 [L,NC]
 RewriteRule ^around-nainital/the-chirping-orchard-pura-stays-near-mukteshwar?$ resorts/resort.php?id=34 [L,NC]
+RewriteRule ^around-nainital/bhikampur-lodge-near-nainital?$ resorts/resort.php?id=35 [L,NC]
+RewriteRule ^around-nainital/mskotia-retreat-near-nainital?$ resorts/resort.php?id=36 [L,NC]
 
 RewriteRule ^around-nainital?$ resorts-map.php?id=39 [L,NC]
 RewriteRule ^around-nainital?$ around-nainital/ [L,NC]
