@@ -5,10 +5,10 @@ RewriteEngine on
 RewriteBase /
 
 RewriteCond %{HTTP_HOST} ^52.76.24.92
-RewriteRule ^(.*)$ http://www.purastays.com/$1 [R=301,L]
+RewriteRule ^(.*)$ https://www.purastays.com/$1 [R=301,L]
 
 RewriteCond %{HTTP_HOST} !^www\.
-RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
 
 RewriteRule ^about-pura-stays?$ about-pura-stays.php [L,NC]
 RewriteRule ^travel-tips?$ travel-tips.php [L,NC]

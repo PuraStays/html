@@ -25,6 +25,7 @@ $(document).ready(function() {
 				})
 				if(propArr.length>0) {
 					$('#BEx4IDaY3bPP').prop("selectedIndex", propArr[0].widget_prop_id);
+					$('#BEx4IDaY3bQBT').attr('href', propArr[0].resort_booking_link);
 				}
 			}
 		})	
