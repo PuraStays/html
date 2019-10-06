@@ -15,8 +15,8 @@ function convert_email($email) {
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Terms and Conditions of Holiday Stays | PuraStays</title>
-    <meta name="description" content="Terms and conditions - Please read and understand the Terms and Conditions of PuraStays - handpicked collection of holiday stays, for an easy travel booking.">
+    <title>Terms and Condition of Pura Stays near  Delhi</title>
+    <meta name="description" content="Please read and understand the Terms and Conditions of PuraStays - handpicked collection of holiday stays, for an easy travel booking and easy accomodation near Nainital, Delhi, Jaipur, Sariska and Ramgarh Shekhawat.">
     <meta name="keywords" content="">
     
     <link rel="shortcut icon" href="../images/favicon.ico">

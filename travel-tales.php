@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Travel Stories | Holiday destinations, Adventure experiences</title>
-    <meta name="description" content="Read inspiring travel stories about unique travel experiences and adventure holidays. Know about unexplored holiday destinations in India.">
+    <title>Travel Stories | Holiday destinations | Adventure experiences by Pura Stays</title>
+    <meta name="description" content="Read inspiring travel stories about unique travel experiences and adventure holidays by Pura Stays in Nainital, Uttarakhand.">
     <meta name="keywords" content="holiday destinations india, adventure travel experiences india">
 
     <link rel="shortcut icon" href="../images/favicon.ico">

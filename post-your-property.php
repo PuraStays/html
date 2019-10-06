@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Be a part of our exclusive collection of holiday stays</title>
-    <meta name="description" content="Share your property details with Pura Stays - India's first travel mood based holiday stays. Reach us at  +91 90 1551 1551 or email us at info@purastays.com">
+    <title>Now you can list your Property at Pura Stays for your Business Growth  | Pura Stays near delhi and Nainital</title>
+    <meta name="description" content="Share your property details with Pura Stays - India's first travel mood based holiday stays around Uttarakhand, Delhi">
     <meta name="keywords" content="">
     
     <link rel="shortcut icon" href="../images/favicon.ico">

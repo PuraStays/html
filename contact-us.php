@@ -15,8 +15,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Get all inclusive travel deals on a holiday stay collection</title>
-    <meta name="description" content="Looking for all inclusive travel deals for special occasion? PuraStays customized package includes exclusive stay with meals and experiences on best price.">
+    <title>Contact about the best Resorts near Uttarakhand and Delhi by Pura Stays</title>
+    <meta name="description" content="PuraStays customize the best package which includes exclusive stay with meals and experiences on budget friendly prices. Contact Pura Stays at Nainital and Delhi now for more information and we are now expanding near jaipur, Sariska, Ramgarh.">
     <meta name="keywords" content="">
     
     <link rel="shortcut icon" href="../images/favicon.ico">

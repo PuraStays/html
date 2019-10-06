@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Book a stay and unique travel experience via | Pura Stays</title>
-    <meta name="description" content="Planning for a great travel experience? Explore holiday stays adhering to your travel mood. Avail all inclusive travel deals on resorts, holiday homes & villas.">
+    <title>Pura Stay helps you to book rooms for a comfortable holiday stay Near Delhi</title>
+    <meta name="description" content="Planning for a great travel experience? Explore holiday stays adhering to your travel mood. Avail all inclusive travel deals on resorts, holiday homes & villas by Pura Stays near Delhi">
     <meta name="keywords" content="">
     
     <link rel="shortcut icon" href="../images/favicon.ico">

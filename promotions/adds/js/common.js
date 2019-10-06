@@ -1,23 +1,28 @@
 (function ( $ ) {
+  // put all that "wl_alert" code here
+  var form = $('.form-float');
+  var currentTopVal = form.offset().top - 40;
+  function scrollFunction() {
+    if($(window).width()>768){
+      // var scrollPos = document.body.scrollTop;
+      var scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+      
+      var formWid = $('.float-form-container').width();
 
+      document.getElementsByClassName("form-float")[0].style.width = formWid + "px";
+      if (scrollPos > currentTopVal) {
+          
+          document.getElementsByClassName("form-float")[0].style.position = "fixed";
+          document.getElementsByClassName("form-float")[0].style.top = "40px";
 
-    // put all that "wl_alert" code here
-    var form = $('.form-float');
-    form.width($('aside').width());
-
-    var currentTopVal = form.offset().top + 0;
-    function scrollFunction() {
-      if($(window).width()>768){
-        var scrollPos = document.body.scrollTop;
-        if (scrollPos > currentTopVal) {
-            document.getElementsByClassName("form-float")[0].style.position = "fixed";
-            document.getElementsByClassName("form-float")[0].style.top = "0px";
-        } else {
-            document.getElementsByClassName("form-float")[0].style.position = "relative";
-            document.getElementsByClassName("form-float")[0].style.top = "-66px";
-        }
-      }  
+      } else {
+          document.getElementsByClassName("form-float")[0].style.position = "relative";
+          document.getElementsByClassName("form-float")[0].style.top = "40px";
+      }        
+    }  
   }
+
+  
 
 
   window.onscroll = scrollFunction;
@@ -34,9 +39,7 @@
       adaptiveHeight: true,
     });
   }
-  if($(window).width()<768){
-    runBxSlider();
-  }
+
 
   function setImageWidth(){
          /* fit image to center and bottom */
@@ -56,16 +59,30 @@
             var widDiff = imgWid - parentWid;
             var htDiff = imgHt - parentHt;
         })
+      } else {
+        $(".gallery-container .gall").each(function(index) {});
       }
     }
 
     $(window).load(function(){
        setImageWidth();
+       changeFluid();
     });
     $(window).resize(function(){
       setImageWidth();
+      changeFluid();
     });
 
-    
+    function changeFluid() {
+      if ($(window).width() > 768) {
+        $('.container-fluid').addClass('container').removeClass('container-fluid');
+        $('.gallery-container').addClass('desk');
+        
+      } else {
+        $('.container').removeClass('container').addClass('container-fluid');
+        $('.gallery-container').removeClass('desk');
+        runBxSlider();
+      }
+    }
 
 }( jQuery ));

@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Essential Travel Planning and Safety Tips | PuraStays</title>
-    <meta name="description" content="Travel Tips for safe and adventurous travel experiences. Handy travel tips for all travellers at Pura Stays - India's first travel mood based portal.">
+    <title>Essential Travel Planning and Safety Tips | PuraStays near Delhi, Nainital</title>
+    <meta name="description" content="Get the ideas for travel trip for Delhi, Uttarakhand from Pura stays with end to end packages.">
     <meta name="keywords" content="">
     
     <link rel="shortcut icon" href="../images/favicon.ico">

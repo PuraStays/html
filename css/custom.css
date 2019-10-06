@@ -75,7 +75,7 @@ body{scrollbar-base-color:#C0C0C0;scrollbar-base-color:#C0C0C0;scrollbar-3dlight
 .navbar-pura2 .navbar-brand{z-index: 5; position: relative;}
 .navbar-pura2 .dropdown-menu .dropdown-inner{padding: 10px;}
 .collapse.navbar-collapse.slideMenu{position: relative;}
-.collapse.navbar-collapse.slideMenu span.abs-num{color: #ffffff; position: absolute; top: -5px; right: 0; width: 124px; background: url('../images/phone-menu-icon.png') no-repeat 0 4px; display: block; text-align: right; font-size: 13px; font-family: open sans; transition: all 0.5s;}
+.collapse.navbar-collapse.slideMenu a.abs-num{color: #ffffff; position: absolute; top: -5px; right: 0; width: 124px; background: url('../images/phone-menu-icon.png') no-repeat 0 4px; display: block; text-align: right; font-size: 13px; font-family: open sans; transition: all 0.5s; text-decoration: none;}
 .navbar-pura2 .dropdown-menu .dropdown-inner li>a{padding: 8px 15px 8px 40px; position:relative; display: block; clear: both; font-weight: 400; line-height: 1.42857143; color: #333; white-space: nowrap; text-decoration: none;}
 .navbar-pura2 .dropdown-menu .dropdown-inner li>a:hover{background: #ededed;}
 .navbar-pura2 .dropdown-menu .dropdown-inner>ul>li>a i{font-size:32px;position:absolute;left:10px;top:7px;color:#999}
@@ -866,7 +866,7 @@ footer h4{font-size:14px;}
 .slideMenu{position: fixed; z-index: 1100; right: 0; top: 0; width: 300px; height: 100%; background: #2f3c42 url('../images/fractal_blue.png') center bottom no-repeat; padding: 0;box-shadow: -10px 0 20px rgba(0,0,0,0.3);}    
 .call_number_container{display: none;}
 .collapse.navbar-collapse.slideMenu{position: fixed;}
-.collapse.navbar-collapse.slideMenu span.abs-num{display: none;}
+.collapse.navbar-collapse.slideMenu a.abs-num{display: none;}
 .navbar-pura2 .res-menu-header{display: block; height: 100px; width: 100%; background: #eaa615 url('../images/fractal_yellow.png') center center repeat}
 .navbar-pura2 .res-menu-header.smaller{height: 60px;}
 .navbar-container{overflow-y:scroll;overflow-x: hidden; padding: 15px 30px 15px 15px; height: 100%;}

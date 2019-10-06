@@ -219,6 +219,7 @@
             var errorDiv = '<small class="form-text text-danger error"></small>'; 
             
             form.on('submit', function(e) {
+                $('.overlay').show();
                 if(true) {
                     e.preventDefault(); 
                     var data = form.serializeArray();                  
@@ -236,7 +237,9 @@
                             component.requestCallBack.find('input[type=text], input[type=email]').val("");
                             component.requestCallBack.find('.status-message').addClass('success').html(resultData.message);
                             setTimeout(function() {
+                                $('.overlay').hide();
                                 $('#reqCallBack').modal('hide');
+                                window.location.href = window.location.origin + '/thank-you';
                                 reset();
                             },800)                        
                         }                        

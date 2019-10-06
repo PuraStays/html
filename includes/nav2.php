@@ -29,7 +29,7 @@
         </div>
         <!-- Collection of nav links, forms, and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse slideMenu"> 
-          <span class="abs-num">+91 90 1551 1551</span>
+          <a href="tel:+919015511551" class="abs-num">+91 90 1551 1551</a>
           <div class="res-menu-header"></div> 
           <div class="navbar-container">              
             <ul class="nav navbar-nav">

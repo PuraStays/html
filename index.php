@@ -35,9 +35,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Weekend Getaways near Delhi| Book holiday Resorts| Packages-Pura Stays</title>
+    <title>Weekend Getaways Near Delhi & Nainital with Beautiful Resorts and Cottages by Pura Stays</title>
     <link rel="shortcut icon" href="../images/favicon.ico">
-    <meta name="description" content="Resorts near Delhi for weekend getaways, Book a perfect holiday stay, cottages and resorts in Nainital. Level up your travel experience with Pura Stays hotels in Nainital">
+    <meta name="description" content="Resorts near Delhi for weekend getaways. Book a perfect holiday stay, cottages and resorts in Nainital, Uttarakhand by Pura Stays.">
     <meta name="keywords" content="weekend getaways packages, book holiday resorts, weekend getaways near delhi, holiday packages ">
     
     <?php include_once("style.php") ?>

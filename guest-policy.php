@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Transparency and accuracy, both are significant | Pura Stays</title>
+    <title>Cancellation and Booking Charges applicable for Guest | Guest Policy of Pura Stays : Uttarakhand & Delhi</title>
      <meta name="description" content="Every traveller must know reservation policy, cancellation and booking extension policy along with other general terms and conditions to avoid last minute chaos.">
     <meta name="keywords" content="">
 

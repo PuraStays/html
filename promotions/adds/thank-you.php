@@ -43,15 +43,18 @@ else
   <meta name="description" content="">
   <meta name="keywords" content="">
   <link rel="shortcut icon" href="images/favicon.ico">
+  <!-- Google Tag Manager --> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-MCKZKCF');</script> <!-- End Google Tag Manager -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="libs/bxslider/jquery.bxslider.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet">
   <?php include_once("../../includes/taghead.php") ?>
+  <!-- Event snippet for Pura-Stays_LeadSubmit_DL conversion page --> <script> gtag('event', 'conversion', {'send_to': 'AW-927508812/YSojCL_RvKcBEMzSoroD'}); </script>
 </head>
 
 <body class="n1">
+<!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCKZKCF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <!-- End Google Tag Manager (noscript) -->
 <?php include_once("../../includes/tagbody.php") ?>
   <div class="banner-container thankyou">
     <header>
@@ -63,7 +66,7 @@ else
             </a>
           </div>
           <div class="header-mobile pull-right">
-            <span><img src="images/pura-phone-icon-pura.png" alt="" /></span>999 999 9999
+            <a class="tel" href="tel:+919015511551"><span><img src="images/pura-phone-icon-pura.png" alt="" /></span>+91 90 1551 1551</a>
           </div>
         </div>
 
@@ -83,8 +86,8 @@ else
       <div class="left-section-block text-center">
         <h3>Thank you</h3>
         <div class="width60">
-          <p>Thank you for contacting Pura Stays! We have received your message and shall get in touch with you at the earliest. Feel free to reach us at <a href="tel:09015511551">+91 90 1551 1551</a>. Happy Holidays</p>
-          <div class="linkToWeb"><a href="http://purastays.com">Go to Purastays</a></div>
+          <p>Thank you for contacting Pura Stays! We have received your message and shall get in touch with you at the earliest. Feel free to reach us at <a class="link" href="tel:+919015511551">+91 90 1551 1551</a>. Happy Holidays</p>
+          <div class="linkToWeb"><a class="link" href="http://purastays.com">Go to Purastays</a></div>
         </div>
 
 

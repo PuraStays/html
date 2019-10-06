@@ -1,23 +1,34 @@
 $(document).ready(function() {
 
-	//floating window djubo integration fake
+	if ($('#cluster option').length > 2) {
+		$('#cluster').on('change', function() {
+			// alert('working');
+		})
+	}
 
-	$.getJSON('/data/resort.json', function(data) {
-		console.log( "success", data );
-	  })
-	.done(function() {
-		console.log( "second success" );
-	})
-	.error(function(jqXHR, textStatus, errorThrown) {
-        console.log("error " + textStatus);
-        console.log("incoming Text " + jqXHR.responseText);
-    })
-	.always(function() {
-		console.log( "complete" );
-	});
-	  
+	//floating window djubo integration fake
+	// $.getJSON('/data/resort.json', function(data) {
+	// 	console.log( "success", data );
+	//   })
+	// .done(function() {
+	// 	console.log( "second success" );
+	// })
+	// .error(function(jqXHR, textStatus, errorThrown) {
+  //       console.log("error " + textStatus);
+  //       console.log("incoming Text " + jqXHR.responseText);
+  //   })
+	// .always(function() {
+	// 	console.log( "complete" );
+	// });
+	function getRandomNumber () {
+	  var d1 = new Date();
+	  d1.toUTCString();
+	  var num = Math.floor(d1.getTime()/1000);
+	  return num;
+	}
 	setTimeout(function() {
-		$.getJSON("/data/resort.json?asf", function(json) {
+		var now = new Date();
+		$.getJSON("/data/resort.json?" + getRandomNumber(), function(json) {
 			if (window.localStorage.page === 'resort') {
 				var pageId = window.localStorage.id;
 				var propArr = json.filter(obj => {

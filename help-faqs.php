@@ -15,8 +15,8 @@ function convert_email($email) {
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Find answers on booking, refund & more | PuraStays Help Desk</title>
-    <meta name="description" content="Find answers to all your travel related questions like booking a stay etc. Pura Stays offers quick online booking of holiday stays and experiences.">
+    <title>Find all the answers related to your bookings and other requirements here by Pura Stays at Delhi, Jaipur, Sariska and Ramgarh Shekhawat</title>
+    <meta name="description" content="Find answers to all your travel related questions like booking a stay etc. Pura Stays offers quick online booking of holiday stays and experiences along with the ratings and Reviews of the Customers.">
     <meta name="keywords" content="">
 
     <link rel="shortcut icon" href="../images/favicon.ico">

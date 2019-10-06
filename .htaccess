@@ -1,4 +1,5 @@
 ErrorDocument 404 /404.php
+Options -Indexes
 Options +FollowSymlinks
 
 RewriteEngine on
@@ -23,6 +24,7 @@ RewriteRule ^guest-policy?$ guest-policy.php [L,NC]
 RewriteRule ^terms-conditions?$ terms-conditions.php [L,NC]
 RewriteRule ^pura-stays-insight?$ pura-stays-insight.php [L,NC]
 RewriteRule ^profile?$ profile.php [L,NC]
+RewriteRule ^thank-you?$ thank-you.php [L,NC]
 
 RewriteRule ^around-nainital/deja-vu-pura-stays-naukuchiatal?$ resorts/resort.php?id=28 [L,NC]
 RewriteRule ^around-nainital/frozen-woods-pura-stays-near-mukteshwar?$ resorts/resort.php?id=21 [L,NC]
@@ -36,6 +38,11 @@ RewriteRule ^around-nainital/banlekhi-pura-stays-near-mukteshwar?$ resorts/resor
 RewriteRule ^around-nainital/the-chirping-orchard-pura-stays-near-mukteshwar?$ resorts/resort.php?id=34 [L,NC]
 RewriteRule ^around-nainital/bhikampur-lodge-near-nainital?$ resorts/resort.php?id=35 [L,NC]
 RewriteRule ^around-nainital/mskotia-retreat-near-nainital?$ resorts/resort.php?id=36 [L,NC]
+RewriteRule ^around-delhi/nazarbagh-palace-pura-stays-jaipur?$ resorts/resort.php?id=37 [L,NC]
+RewriteRule ^around-nainital/avaas-pura-stays-ramgarh?$ resorts/resort.php?id=38 [L,NC]
+RewriteRule ^around-nainital/the-hive-cottage-pura-stays-near-nainital?$ resorts/resort.php?id=39 [L,NC]
+RewriteRule ^around-delhi/upvan-wildlife-resort-pura-stays-kalagarh?$ resorts/resort.php?id=40 [L,NC]
+RewriteRule ^around-delhi/howard-sanctuary-rishikesh-pura-stays?$ resorts/resort.php?id=41 [L,NC]
 
 RewriteRule ^around-nainital?$ resorts-map.php?id=39 [L,NC]
 RewriteRule ^around-nainital?$ around-nainital/ [L,NC]

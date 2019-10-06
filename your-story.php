@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Share Your Travel Photos and Experiences | PuraStays.com</title>
-    <meta name="description" content="Share your travel story and let your travel experience be an inspiration for travel lovers. Explore India's first travel mood collection of holiday stays.">
+    <title>Share stories about your Experiences and joyful stay at our best resort now near Delhi, Nainital, Jaipur, Sariska and Ramgarh Shekhawat | Pura Stays</title>
+    <meta name="description" content="Share your travel story with Pura Stays and let your travel experience be an inspiration for travel lovers.">
     <meta name="keywords" content=""> 
 
     <link rel="shortcut icon" href="../images/favicon.ico">
