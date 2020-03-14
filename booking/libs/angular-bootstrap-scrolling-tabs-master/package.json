@@ -22,7 +22,7 @@
     "config.rb"
   ],
   "dependencies": {
-    "bootstrap": "~3.1.1",
+    "bootstrap": "~3.4.1",
     "angular": "~1.2.25"
   },
   "keywords": [
