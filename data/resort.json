@@ -25,55 +25,48 @@
         "resort_name": "The Chirping Orchard - Pura Stays, Mukteshwar",
         "resort_booking_link": "https://www.secure-booking-engine.com/accounts/YYcDka7DAsWh4JBPKmq5Pg/properties/Dg_l4zuJ6Jd-EkFnqtv3AA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/YpDofCZY81jIqRX3yoTY9Q/#/search",
         "widget_loc": "MUKTESWER",
-        "widget_prop_id": 4
+        "widget_prop_id": 3
     },
     {
-        "resort_id": "32",
-        "resort_name": "The Vergomont - Pura Stays, Near Nainital",
-        "resort_booking_link": "https://www.secure-booking-engine.com/accounts/YYcDka7DAsWh4JBPKmq5Pg/properties/qW166ze85MBh03nttSuGFw/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/zntq19Iy5XiO9rZMvmEmbg/#/search",
+        "resort_id": "42",
+        "resort_name": "Jungle Camp Sariska - Pura Stays",
+        "resort_booking_link": "https://www.secure-booking-engine.com/accounts/YYcDka7DAsWh4JBPKmq5Pg/properties/7BDpF0ceGzeUAzBI86mjJA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/WNEmjM0DsV9ZZ0R7WMGWlQ/#/search",
         "widget_loc": "NAINI TAL",
-        "widget_prop_id": 5
+        "widget_prop_id": 4
     },
     {
         "resort_id": "33",
         "resort_name": "Banlekhi - Pura Stays, Near Mukteshwar",
         "resort_booking_link": "https://www.secure-booking-engine.com/accounts/YYcDka7DAsWh4JBPKmq5Pg/properties/97S2cQVCwq762y_fIay5eg/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/oEmRVurGVOrBIDpJ03b1TQ/#/search",
         "widget_loc": "NAINI TAL",
-        "widget_prop_id": 6
+        "widget_prop_id": 5
     },
     {
         "resort_id": "35",
         "resort_name": "Bhikampur Lodge - Pura Stays, Nainital",
         "resort_booking_link": "https://www.secure-booking-engine.com/accounts/YYcDka7DAsWh4JBPKmq5Pg/properties/tHuCjWCryzbQUZ4mApAz-Q/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/mxuprQsH7erGDTvuFGrVcQ/#/search",
-        "widget_loc": "NAINI TAL",
-        "widget_prop_id": 7
+        "widget_loc": "AROUND DELHI",
+        "widget_prop_id": 6
     },
     {
         "resort_id": "37",
         "resort_name": "Nazarbagh Palace - Pura Stays, Jaipur",
         "resort_booking_link": "https://www.secure-booking-engine.com/accounts/YYcDka7DAsWh4JBPKmq5Pg/properties/8ByT0Q7YWOivrClA7gnsCg/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/2cmJxxFr_unSVd0kC01Wqg/#/search",
         "widget_loc": "JAIPUR",
-        "widget_prop_id": 1
-    },
-    {
-        "resort_id": "38",
-        "resort_name": "Avaas - Pura Stays, Ramgarh",
-        "resort_booking_link": "https://www.secure-booking-engine.com/accounts/YYcDka7DAsWh4JBPKmq5Pg/properties/WfdZQ60dVkK2_P5wPmzYqQ/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/_6EZZ8fpMcn-2_teu4X-tA/#/search",
-        "widget_loc": "NAINI TAL",
-        "widget_prop_id": 8
+        "widget_prop_id": 7
     },
     {
         "resort_id": "40",
         "resort_name": "Upvan Wildlife Resort - Pura Stays",
         "resort_booking_link": "https://www.secure-booking-engine.com/accounts/YYcDka7DAsWh4JBPKmq5Pg/properties/JjuTvpCECJhc88TUcCLKeA/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/R0sn0lJyVt6--9ylGdMheg/#/search",
         "widget_loc": "KALAGARH",
-        "widget_prop_id": 1
+        "widget_prop_id": 8
     },
     {
         "resort_id": "41",
         "resort_name": "Howard Sanctuary Rishikesh - Pura Stays",
         "resort_booking_link": "https://www.secure-booking-engine.com/accounts/YYcDka7DAsWh4JBPKmq5Pg/properties/3dip50u4OVWKAkOPI3AZtg/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/cart/5y2_CIKuyYo5QrIIY5YxUQ/#/search",
         "widget_loc": "RISHIKESH",
-        "widget_prop_id": 1
+        "widget_prop_id": 9
     }
 ]

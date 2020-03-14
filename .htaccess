@@ -43,6 +43,7 @@ RewriteRule ^around-nainital/avaas-pura-stays-ramgarh?$ resorts/resort.php?id=38
 RewriteRule ^around-nainital/the-hive-cottage-pura-stays-near-nainital?$ resorts/resort.php?id=39 [L,NC]
 RewriteRule ^around-delhi/upvan-wildlife-resort-pura-stays-kalagarh?$ resorts/resort.php?id=40 [L,NC]
 RewriteRule ^around-delhi/howard-sanctuary-rishikesh-pura-stays?$ resorts/resort.php?id=41 [L,NC]
+RewriteRule ^around-delhi/jungle-camp-sariska-pura-stays?$ resorts/resort.php?id=42 [L,NC]
 
 RewriteRule ^around-nainital?$ resorts-map.php?id=39 [L,NC]
 RewriteRule ^around-nainital?$ around-nainital/ [L,NC]
